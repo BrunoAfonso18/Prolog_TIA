@@ -10,13 +10,11 @@ carro(bmw,serie3,32000),carro(ford,focus,24000)])
 ]).
 
 stand(miami,[
-
 cliente(rui,3333,33,operario,[carro(fiat,panda,12000)]),
 cliente(paulo,3334,22,advogado,[carro(audi,a4,36000)]),
 cliente(pedro,3335,46,advogado,[carro(honda,accord,32000),carro(audi,a2,20000)])
 
 ]).
-
 
 
 listar_clientes(X,LC):- stand(X,L),
