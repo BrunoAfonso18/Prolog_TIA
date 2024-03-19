@@ -1,0 +1,46 @@
+% Regras de conhecimento
+
+if primavera and trabalho then hotel.
+if primavera and trabalho then apartamento.
+if primavera and relaxar then villa.
+if primavera and relaxar then casadecampo.
+if primavera and turismo then hostel.
+if primavera and turismo then casa.
+if primavera and saidaromantica then barco.
+
+if verao and trabalho then hotel.
+if verao and relaxar then casa.
+if verao and relaxar then villa.
+if verao and turismo then hostel.
+if verao and turismo then casadecampo.
+if verao and saidaromantica then apartamento.
+if verao and saidaromantica then barco.
+
+if outono and trabalho then hotel.
+if outono and relaxar then apartamento.
+if outono and turismo then casa.
+if outono and saidaromantica then casadecampo.
+if outono and saidaromantica then hostel.
+
+if inverno and trabalho then apartamento.
+if inverno and relaxar then hostel.
+if inverno and relaxar then casadecampo.
+if inverno and turismo then casa.
+if inverno and saidaromantica then hotel.
+
+if caminhadas and carinhoso then interior.
+if caminhadas and moderno then centro.
+if caminhadas and aventureiro then litoral.
+
+if socializar and carinhoso then interior.
+if socializar and moderno then centro.
+if socializar and aventureiro then litoral.
+
+if praia and carinhoso then litoral.
+if praia and moderno then centro.
+if praia and aventureiro then interior.
+
+if estudante then '0_50'.
+if tbl_est then '50_100'.
+if trabalhador then '100_200'.
+if reformado then '200'.
