@@ -1,5 +1,10 @@
 %doenca(sintoma, medicamento, gravidez, idade, alergia)
 
+% tornar os medicamentos em lista com mais do que um medicamento em cada doenca
+% adicionar colunas necessarias
+% acrescentar o maximo de doencas no mesmo modelo
+
+
 doenca('Dor_cabeca', 'Paracetamol', 'F', 'B', 'F').
 doenca('Dor_cabeca', 'Paracetamol', 'F', 'B', 'T').
 doenca('Dor_cabeca', 'Paracetamol', 'T', 'B', 'F').
@@ -12,7 +17,7 @@ doenca('Dor_articulacoes', 'Nurofen', 'F', 'A', 'F').
 doenca('Dor_costas', 'Voltaren', 'F', 'B', 'F').
 doenca('Dor_costas', 'Compressas', 'F', 'B', 'T').
 doenca('Dor_costas', 'Paracetamol', 'T', 'B', 'F').
-doenca('Febre', 'Paracetamol', 'F', 'B', 'F').
+doenca('Febre', ['Paracetamol', 'Benuron'], 'F', 'B', 'F').
 doenca('Febre', 'Brufen', 'F', 'A', 'F').
 doenca('Tosse', 'Dextrometorfano', 'F', 'B', 'F').
 doenca('Tosse', 'Bisolvon', 'F', 'A', 'F').
@@ -20,11 +25,8 @@ doenca('Tosse', 'Bisolvon', 'F', 'A', 'F').
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
 
-/*verdoenca(X,W,Z):- findall(Y,(doenca(Y,H,_,U,_,_,_,W), H>=Z, membro(X,U)),K), print(K).*/
 
-verdoencamedicamento(X):- findall(Y,(doenca(Y,U,_,_,_,_,_,_), X=U),K), print(K).
-
-/*verfilmeator(X):- findall(Y,(filme(Y,_,_,_,_,_,U,_), membro(X,U)),K), print(K).*/
+verdoenca(Sintoma, Medicamentos) :-
+    findall(Medicamento, doenca(Sintoma, Medicamento, _, _, _), Medicamentos).
 
 
-/*filme(titulo,ano,classificacao,genero(1,2,3),duracao, realizador,ator(1,2))*/
