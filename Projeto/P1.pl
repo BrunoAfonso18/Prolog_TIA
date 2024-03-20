@@ -1,8 +1,19 @@
-%doenca(sintoma, medicamento, gravidez, idade, alergia)
+%doenca(sintoma, medicamento, gravidez, idade, alergia, solido)
 
-doenca('Dor_cabeca', 'Paracetamol', 'F', 'B', 'F').
-doenca('Dor_cabeca', 'Paracetamol', 'F', 'B', 'T').
-doenca('Dor_cabeca', 'Paracetamol', 'T', 'B', 'F').
+%A- Adulto
+%B- Idoso
+%C- Crianca -7
+%D- Crianca +7
+
+%F- condicao falsa para utente
+%V- condicao verdadeira para utente 
+
+doenca('Dor_cabeca', 'Paracetamol', 'F', 'A', 'F','V').
+doenca('Dor_cabeca', 'Paracetamol', 'F', 'A', 'T','').
+doenca('Dor_cabeca', 'Paracetamol', 'T', 'A', 'F','').
+doenca('Dor_cabeca', 'Paracetamol', 'F', 'B', 'F','').
+doenca('Dor_cabeca', 'Paracetamol', 'T', 'C','F','').
+doenca('Dor_cabeca', 'Paracetamol', 'T', 'D','F').
 doenca('Dor_garganta', 'Paracetamol', 'T', 'B', 'F').
 doenca('Dor_garganta', 'Epiniferina', 'F', 'B', 'T').
 doenca('Dor_muscular', 'Ibuprofeno', 'F', 'B', 'F').
