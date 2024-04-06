@@ -38,6 +38,3 @@ somatorio(0,[]).
 somatorio(X,[Y|R]):- somatorio(S,R), X is S+Y.
 media(X,L):-comprimento(N,L), somatorio(S,L),
 	X is S/N.
-
-preco_medio(X,Med):-
-altera_id(X,C,Id):-

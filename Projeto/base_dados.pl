@@ -19,7 +19,6 @@ doenca('Dor_garganta', 'Epiniferina', 'F', 'B', 'T').
 doenca('Dor_muscular', 'Ibuprofeno', 'F', 'B', 'F').
 doenca('Dor_muscular', 'Ibuprofeno', 'T', 'B', 'F').
 doenca('Dor_articulacoes', 'Voltaren', 'F', 'B', 'F').
-doenca('Dor_articulacoes', 'Nurofen', 'F', 'A', 'F').
 doenca('Dor_costas', 'Voltaren', 'F', 'B', 'F').
 doenca('Dor_costas', 'Compressas', 'F', 'B', 'T').
 doenca('Dor_costas', 'Paracetamol', 'T', 'B', 'F').
