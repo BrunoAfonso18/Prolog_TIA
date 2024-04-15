@@ -1,213 +1,39 @@
-%doenca(doenca, medicamento, gravidez, idade, alergia)
+% ------- estrutura da base de dados --------
 
-doenca('Dor_cabeca', ['Paracetamol','Nurofen','Nurofen xarope','Cha calmante'], naogravida ,adulto,nalergia,comprimido).
-doenca('Dor_cabeca', ['Paracetamol xarope','Cha calmante','Nurofen xarope'], naogravida, adulto, nalergia,xarope).
-doenca('Dor_cabeca', ['Nurofen','Nurofen xarope','Cha calmante'], naogravida, adulto,alergia,comprimido).
-doenca('Dor_cabeca', ['Nurofen xarope','Cha calmante'], naogravida, adulto,alergia,xarope).
-doenca('Dor_cabeca', ['Paracetamol','Cha calmante'], gravida, adulto,nalergia,comprimido).
-doenca('Dor_cabeca', ['Consultar medico'], gravida, adulto,alergia,comprimido).
-doenca('Dor_cabeca', ['Paracetamol xarope','Cha calmante'], gravida, adulto,nalergia,xarope).
-doenca('Dor_cabeca', ['Nurofen xarope','Consultar medico'], gravida, adulto,alergia,xarope).
-doenca('Dor_cabeca', ['Nurofen xarope'], naogravida, crianca,nalergia,xarope).
-doenca('Dor_cabeca', ['Consultar medico'], naogravida, crianca,alergia,xarope).
-
-
-doenca('Dor_garganta', ['Paracetamol','Paracetamol xarope','Strepsils','Epiniferina'],naogravida, adulto,nalergia,comprimido).
-doenca('Dor_garganta', ['Paracetamol xarope','Strepsils','Epiniferina'],naogravida, adulto,nalergia,xarope).
-doenca('Dor_garganta', ['Consultar medico','Strepsils'],naogravida, adulto,alergia,xarope).
-doenca('Dor_garganta', ['Strepsils'],naogravida, adulto,alergia,comprimido).
-doenca('Dor_garganta', ['Paracetamol','Paracetamol xarope'],gravida, adulto,nalergia,comprimido).
-doenca('Dor_garganta', ['Consultar medico'],gravida, adulto,alergia,comprimido).
-doenca('Dor_garganta', ['Consultar medico','Strepsils'],gravida, adulto,alergia,xarope).
-doenca('Dor_garganta', ['Paracetamol xarope','Strepsils'],gravida, adulto,nalergia,xarope).
-doenca('Dor_garganta', 'Epiniferina', naogravida, crianca, nalergia,xarope).
-doenca('Dor_garganta', 'Epiniferina', naogravida, crianca, alergia,xarope).
+%doença(ritmo_cardiaco,temperatura,dor_inalar,tensao_art,tosse,inchaco_garganta,tipo_tosse[(espeturacao, seca, sangue)],dispeneia, diagnostico[nome_doenca, nome_doença, nome_doença].
+% ritmo_cardiaco (rc_alto, rc_baixo, rc_normal)
+% temperatura (temp_alta, temp_normal)
+% dor_inalar (di_sim, di_nao)
+% tensao_art (ta_alta, ta_baixa, ta_normal)
+% tosse (t_sim, t_nao)
+% inchaco_garganta (ig_sim, ig_nao)
+% tipo_tosse (tt_seca, tt_espeturacao, tt_sangue, tt_nulo)
+% dispeneia (d_sim, d_nao)
 
 
-doenca('Dor_muscular', ['Ibuprofeno','Nurofen'], naogravida, adulto, nalergia,comprimido).
-doenca('Dor_muscular', ['Nurofen','compressas'], naogravida, adulto, nalergia,xarope).
-doenca('Dor_muscular', ['Consultar medico','compressas'], naogravida, adulto, alergia,comprimido).
-doenca('Dor_muscular', ['Nurofen','compressas'], naogravida, adulto, alergia,xarope).
-doenca('Dor_muscular', ['Consultar medico','compressas'], gravida, adulto, nalergia,comprimido).
-doenca('Dor_muscular', ['Consultar medico','compressas'], gravida, adulto, nalergia,xarope).
-doenca('Dor_muscular', ['Consultar medico','compressas'], gravida, adulto, alergia,comprimido).
-doenca('Dor_muscular', ['Consultar medico','compressas'], gravida, adulto, alergia,xarope).
-doenca('Dor_muscular', ['Consultar medico'], naogravida, crianca, alergia,xarope).
-doenca('Dor_muscular', ['Nurofen','Consultar medico'], naogravida, crianca, nalergia,xarope).
+doenca(rc_normal, temp_normal, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Sem doenças pulmunares aparentes, procure ajuda médica noutra área']).
+doenca(rc_alto, temp_normal, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Ansiedade ou Stress']).
+doenca(rc_baixo, temp_normal, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Braquicardia']).
 
+doenca(rc_alto, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Infeção bacteriana', 'Infeção vírica', 'Infeção fúngica']).
+doenca(rc_normal, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Febre Viral', 'Infeções nao pulmunares']).
+doenca(rc_baixo, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
 
-doenca('Dor_articulacoes', ['Paracetamol','Nurofen'], naogravida ,adulto,nalergia,comprimido).
-doenca('Dor_articulacoes', ['Paracetamol','Nurofen'], naogravida, adulto, nalergia,xarope).
-doenca('Dor_articulacoes', ['Consultar medico','Voltaren'], naogravida, adulto,alergia,comprimido).
-doenca('Dor_articulacoes', ['Consultar medico','Voltaren'], naogravida, adulto,alergia,xarope).
-doenca('Dor_articulacoes', ['Consultar medico','Voltaren'], gravida, adulto,nalergia,comprimido).
-doenca('Dor_articulacoes', ['Consultar medico','Voltaren'], gravida, adulto,alergia,comprimido).
-doenca('Dor_articulacoes', ['Consultar medico','Voltaren'], gravida, adulto,nalergia,xarope).
-doenca('Dor_articulacoes', ['Consultar medico','Voltaren'], gravida, adulto,alergia,xarope).
-doenca('Dor_articulacoes', ['Nurofen,Voltaren'], naogravida, crianca,nalergia,xarope).
-doenca('Dor_articulacoes', ['Consultar medico','Voltaren'], naogravida, crianca,alergia,xarope).
+doenca(rc_alto, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_alto, temp_normal, di_sim, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_alto, temp_alta, di_sim, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_baixo, temp_alta, di_sim, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
 
+doenca(rc_baixo, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_baixo, temp_normal, di_sim, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_baixo, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_baixo, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_baixo, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_baixo, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_baixo, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_baixo, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
+doenca(rc_baixo, temp_alta, di_nao, ta_normal, t_nao, ig_nao, tt_nulo, d_nao,['Condição Neurológica', 'Condição cardíaca']).
 
-
-doenca('Dor_costas', ['Paracetamol','Voltaren','Compressas'], naogravida ,adulto,nalergia,comprimido).
-doenca('Dor_costas', ['Paracetamol','Voltaren','Compressas'], naogravida, adulto, nalergia,xarope).
-doenca('Dor_costas', ['Voltaren','Compressas'], naogravida, adulto,alergia,comprimido).
-doenca('Dor_costas', ['Voltaren','Compressas'], naogravida, adulto,alergia,xarope).
-doenca('Dor_costas', ['Paracetamol','Voltaren','Compressas'], gravida, adulto,nalergia,comprimido).
-doenca('Dor_costas', ['Voltaren','Compressas'], gravida, adulto,alergia,comprimido).
-doenca('Dor_costas', ['Paracetamol','Voltaren','Compressas'], gravida, adulto,nalergia,xarope).
-doenca('Dor_costas', ['Consultar medico','Voltaren','Compressas'], gravida, adulto,alergia,xarope).
-doenca('Dor_costas', ['Paracetamol','Voltaren','Compressas'], naogravida, crianca,nalergia,xarope).
-doenca('Dor_costas', ['Consultar medico','Voltaren','Compressas'], naogravida, crianca,alergia,xarope).
-
-
-doenca('Febre', ['Paracetamol','Brufen'], naogravida ,adulto,nalergia,comprimido).
-doenca('Febre', ['Paracetamol','Brufen'], naogravida, adulto, nalergia,xarope).
-doenca('Febre', ['Consultar medico'], naogravida, adulto,alergia,comprimido).
-doenca('Febre', ['Consultar medico'], naogravida, adulto,alergia,xarope).
-doenca('Febre', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-doenca('Febre', ['Consultar medico'], gravida, adulto,alergia,comprimido).
-doenca('Febre', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-doenca('Febre', ['Consultar medico'], gravida, adulto,alergia,xarope).
-doenca('Febre', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-doenca('Febre', ['Consultar medico'], naogravida, crianca,alergia,xarope).
-
-
-doenca('Tosse', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-doenca('Tosse', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-doenca('Tosse', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-doenca('Tosse', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-doenca('Tosse', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-doenca('Tosse', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-doenca('Tosse', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-doenca('Tosse', ['Paracetamol'], gravida, adulto,alergia,xarope).
-doenca('Tosse', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-doenca('Tosse', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-doenca('Congestao_nasal', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-doenca('Congestao_nasal', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-doenca('Congestao_nasal', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-doenca('Congestao_nasal', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-doenca('Congestao_nasal', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-doenca('Congestao_nasal', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-doenca('Congestao_nasal', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-doenca('Congestao_nasal', ['Paracetamol'], gravida, adulto,alergia,xarope).
-doenca('Congestao_nasal', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-doenca('Congestao_nasal', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-doenca('Nausea', ['Vomidrine', 'Consumir gengibre', 'Gurosan'], naogravida ,adulto,nalergia,comprimido).
-doenca('Nausea', ['Gurosan', 'Consumir gengibre'], naogravida, adulto, nalergia,xarope).
-doenca('Nausea', ['Consumir gengibre'], naogravida, adulto,alergia,comprimido).
-doenca('Nausea', ['Consumir gengibre'], naogravida, adulto,alergia,xarope).
-doenca('Nausea', ['Consumir gengibre', 'Consultar medico'], gravida, adulto,nalergia,comprimido).
-doenca('Nausea', ['Consumir gengibre', 'Consultar medico'], gravida, adulto,alergia,comprimido).
-doenca('Nausea', ['Consumir gengibre', 'Consultar medico'], gravida, adulto,nalergia,xarope).
-doenca('Nausea', ['Consumir gengibre', 'Consultar medico'], gravida, adulto,alergia,xarope).
-doenca('Nausea', ['Vomikids', 'Consumir gengibre'], naogravida, crianca,nalergia,xarope).
-doenca('Nausea', ['Consumir gengibre'], naogravida, crianca,alergia,xarope).
-
-
-doenca('Vomito', ['Vomidrine', 'Gurosan','Enjomin', 'Metoclopramida'], naogravida ,adulto,nalergia,comprimido).
-doenca('Vomito', ['Gurosan'], naogravida, adulto, nalergia,xarope).
-doenca('Vomito', ['Vomidrine', 'Enjomin'], naogravida, adulto,alergia,comprimido).
-doenca('Vomito', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-doenca('Vomito', ['Metocloropramida'], gravida, adulto,nalergia,comprimido).
-doenca('Vomito', ['Consultar medico'], gravida, adulto,alergia,comprimido).
-doenca('Vomito', ['Consultar medico', 'Metoclopramida'], gravida, adulto,nalergia,xarope).
-doenca('Vomito', ['Consultar medico'], gravida, adulto,alergia,xarope).
-doenca('Vomito', ['Vomilids' , 'Gurosan'], naogravida, crianca,nalergia,xarope).
-doenca('Vomito', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-doenca('Diarreia', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-doenca('Diarreia', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-doenca('Diarreia', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-doenca('Diarreia', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-doenca('Diarreia', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-doenca('Diarreia', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-doenca('Diarreia', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-doenca('Diarreia', ['Paracetamol'], gravida, adulto,alergia,xarope).
-doenca('Diarreia', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-doenca('Diarreia', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-doenca('Insonia', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-doenca('Insonia', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-doenca('Insonia', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-doenca('Insonia', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-doenca('Insonia', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-doenca('Insonia', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-doenca('Insonia', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-doenca('Insonia', ['Paracetamol'], gravida, adulto,alergia,xarope).
-doenca('Insonia', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-doenca('Insonia', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-doenca('Ansiedade', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-doenca('Ansiedade', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-doenca('Ansiedade', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-doenca('Ansiedade', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-doenca('Ansiedade', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-doenca('Ansiedade', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-doenca('Ansiedade', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-doenca('Ansiedade', ['Paracetamol'], gravida, adulto,alergia,xarope).
-doenca('Ansiedade', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-doenca('Ansiedade', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-doenca('Alergias', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-doenca('Alergias', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-doenca('Alergias', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-doenca('Alergias', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-doenca('Alergias', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-doenca('Alergias', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-doenca('Alergias', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-doenca('Alergias', ['Paracetamol'], gravida, adulto,alergia,xarope).
-doenca('Alergias', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-doenca('Alergias', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-
-doenca('Inchaco', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-doenca('Inchaco', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-doenca('Inchaco', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-doenca('Inchaco', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-doenca('Inchaco', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-doenca('Inchaco', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-doenca('Inchaco', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-doenca('Inchaco', ['Paracetamol'], gravida, adulto,alergia,xarope).
-doenca('Inchaco', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-doenca('Inchaco', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-doenca('Congestao_ocular', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-doenca('Congestao_ocular', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-doenca('Congestao_ocular', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-doenca('Congestao_ocular', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-doenca('Congestao_ocular', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-doenca('Congestao_ocular', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-doenca('Congestao_ocular', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-doenca('Congestao_ocular', ['Paracetamol'], gravida, adulto,alergia,xarope).
-doenca('Congestao_ocular', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-doenca('Congestao_ocular', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-doenca('Enjoo', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-doenca('Enjoo', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-doenca('Enjoo', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-doenca('Enjoo', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-doenca('Enjoo', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-doenca('Enjoo', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-doenca('Enjoo', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-doenca('Enjoo', ['Paracetamol'], gravida, adulto,alergia,xarope).
-doenca('Enjoo', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-doenca('Enjoo', ['Paracetamol'], naogravida, crianca,alergia,xarope).
 
 
 membro( X, [X|_] ).
