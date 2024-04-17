@@ -1,5 +1,5 @@
 :-dynamic(fact/1),
-[forward, base_dados, proof, base_conhecimento].
+[forward, basedados, proof, baseconhecimento].
 
 menu:- nl,nl , 	write('\e[H\e[2J'),
 				write('                                                                                                        '), nl,
