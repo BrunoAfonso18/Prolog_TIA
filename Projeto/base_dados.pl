@@ -1,499 +1,211 @@
-%sintoma(sintoma, medicamento, gravidez, idade, alergia)
-
-%A- Adulto
-%B- Idoso
-%C- Crianca -7
-%D- Crianca +7
-
-%nao gravida- condicao falsa para utente
-%V- condicao verdadeira para utente 
-
-sintoma('Dor_cabeca', ['Paracetamol','Nurofen','Nurofen xarope','Cha calmante'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol xarope','Cha calmante','Nurofen xarope'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Nurofen','Nurofen xarope','Cha calmante'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Nurofen xarope','Cha calmante'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol','Cha calmante'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Consultar medico'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol xarope','Cha calmante'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Nurofen xarope','Consultar medico'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Nurofen xarope'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Consultar medico'], naogravida, crianca,alergia,xarope).
-
-
-sintoma('Dor_garganta', ['Paracetamol','Paracetamol xarope','Strepsils','Epiniferina'],naogravida, adulto,nalergia,comprimido).
-sintoma('Dor_garganta', ['Paracetamol xarope','Strepsils','Epiniferina'],naogravida, adulto,nalergia,xarope).
-sintoma('Dor_garganta', ['Consultar medico','Strepsils'],naogravida, adulto,alergia,xarope).
-sintoma('Dor_garganta', ['Strepsils'],naogravida, adulto,alergia,comprimido).
-sintoma('Dor_garganta', ['Paracetamol','Paracetamol xarope'],gravida, adulto,nalergia,comprimido).
-sintoma('Dor_garganta', ['Consultar medico'],gravida, adulto,alergia,comprimido).
-sintoma('Dor_garganta', ['Consultar medico','Strepsils'],gravida, adulto,alergia,xarope).
-sintoma('Dor_garganta', ['Paracetamol xarope','Strepsils'],gravida, adulto,nalergia,xarope).
-sintoma('Dor_garganta', 'Epiniferina', naogravida, crianca, nalergia,xarope).
-sintoma('Dor_garganta', 'Epiniferina', naogravida, crianca, alergia,xarope).
-
-
-sintoma('Dor_muscular', ['Ibuprofeno'], naogravida, adulto, nalergia,comprimido).
-sintoma('Dor_muscular', ['Ibuprofeno'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_muscular', ['Ibuprofeno'], naogravida, adulto, alergia,comprimido).
-sintoma('Dor_muscular', ['Ibuprofeno'], naogravida, adulto, alergia,xarope).
-sintoma('Dor_muscular', ['Ibuprofeno'], gravida, adulto, nalergia,comprimido).
-sintoma('Dor_muscular', ['Ibuprofeno'], gravida, adulto, nalergia,xarope).
-sintoma('Dor_muscular', ['Ibuprofeno'], gravida, adulto, alergia,comprimido).
-sintoma('Dor_muscular', ['Ibuprofeno'], gravida, adulto, alergia,xarope).
-sintoma('Dor_muscular', ['Ibuprofeno'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_muscular', ['Ibuprofeno'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_muscular', ['Ibuprofeno'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_muscular', ['Ibuprofeno'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_muscular', ['Ibuprofeno'], naogravida, crianca, alergia,xarope).
-sintoma('Dor_muscular', ['Ibuprofeno'], naogravida, crianca, nalergia,xarope).
-
-sintoma('Dor_articulacoes', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_articulacoes', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_articulacoes', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_articulacoes', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_articulacoes', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_articulacoes', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_articulacoes', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_articulacoes', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_articulacoes', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_articulacoes', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_articulacoes', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_articulacoes', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_articulacoes', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_articulacoes', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
-
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida ,adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], gravida, adulto,alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,comprimido).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, idoso, alergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,nalergia,xarope).
-sintoma('Dor_cabeca', ['Paracetamol'], naogravida, crianca,alergia,xarope).
-
-
+% ------- estrutura da base de dados --------
+
+%doença(ritmo_cardiaco,temperatura,tosse,inchaco_garganta,tipo_tosse[(espeturacao, seca, sangue, nulo)],dispeneia, diagnostico[nome_doenca, nome_doença, nome_doença].
+
+% ritmo_cardiaco (rc_alto, rc_baixo, rc_normal)
+% temperatura (temp_alta, temp_normal)
+% tosse (t_sim, t_nao)
+% inchaco_garganta (ig_sim, ig_nao)
+% tipo_tosse (tt_seca, tt_espeturacao, tt_sangue, tt_nulo)
+% dispeneia (d_sim, d_nao)
+
+doenca(rc_alto, temp_alta, t_sim, ig_sim, tt_seca, d_sim, ["Possiveis Diagnosticos"]).
+doenca(rc_alto, temp_alta, t_sim, ig_sim, tt_seca, d_nao).
+doenca(rc_alto, temp_alta, t_sim, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_alto, temp_alta, t_sim, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_alto, temp_alta, t_sim, ig_sim, tt_sangue, d_sim).
+doenca(rc_alto, temp_alta, t_sim, ig_sim, tt_sangue, d_nao).
+doenca(rc_alto, temp_alta, t_sim, ig_sim, tt_nulo, d_sim).
+doenca(rc_alto, temp_alta, t_sim, ig_sim, tt_nulo, d_nao).
+doenca(rc_alto, temp_alta, t_sim, ig_nao, tt_seca, d_sim).
+doenca(rc_alto, temp_alta, t_sim, ig_nao, tt_seca, d_nao).
+doenca(rc_alto, temp_alta, t_sim, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_alto, temp_alta, t_sim, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_alto, temp_alta, t_sim, ig_nao, tt_sangue, d_sim).
+doenca(rc_alto, temp_alta, t_sim, ig_nao, tt_sangue, d_nao).
+doenca(rc_alto, temp_alta, t_sim, ig_nao, tt_nulo, d_sim).
+doenca(rc_alto, temp_alta, t_sim, ig_nao, tt_nulo, d_nao).
+doenca(rc_alto, temp_alta, t_nao, ig_sim, tt_seca, d_sim).
+doenca(rc_alto, temp_alta, t_nao, ig_sim, tt_seca, d_nao).
+doenca(rc_alto, temp_alta, t_nao, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_alto, temp_alta, t_nao, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_alto, temp_alta, t_nao, ig_sim, tt_sangue, d_sim).
+doenca(rc_alto, temp_alta, t_nao, ig_sim, tt_sangue, d_nao).
+doenca(rc_alto, temp_alta, t_nao, ig_sim, tt_nulo, d_sim).
+doenca(rc_alto, temp_alta, t_nao, ig_sim, tt_nulo, d_nao).
+doenca(rc_alto, temp_alta, t_nao, ig_nao, tt_seca, d_sim).
+doenca(rc_alto, temp_alta, t_nao, ig_nao, tt_seca, d_nao).
+doenca(rc_alto, temp_alta, t_nao, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_alto, temp_alta, t_nao, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_alto, temp_alta, t_nao, ig_nao, tt_sangue, d_sim).
+doenca(rc_alto, temp_alta, t_nao, ig_nao, tt_sangue, d_nao).
+doenca(rc_alto, temp_alta, t_nao, ig_nao, tt_nulo, d_sim).
+doenca(rc_alto, temp_alta, t_nao, ig_nao, tt_nulo, d_nao).
+doenca(rc_alto, temp_normal, t_sim, ig_sim, tt_seca, d_sim).
+doenca(rc_alto, temp_normal, t_sim, ig_sim, tt_seca, d_nao).
+doenca(rc_alto, temp_normal, t_sim, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_alto, temp_normal, t_sim, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_alto, temp_normal, t_sim, ig_sim, tt_sangue, d_sim).
+doenca(rc_alto, temp_normal, t_sim, ig_sim, tt_sangue, d_nao).
+doenca(rc_alto, temp_normal, t_sim, ig_sim, tt_nulo, d_sim).
+doenca(rc_alto, temp_normal, t_sim, ig_sim, tt_nulo, d_nao).
+doenca(rc_alto, temp_normal, t_sim, ig_nao, tt_seca, d_sim).
+doenca(rc_alto, temp_normal, t_sim, ig_nao, tt_seca, d_nao).
+doenca(rc_alto, temp_normal, t_sim, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_alto, temp_normal, t_sim, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_alto, temp_normal, t_sim, ig_nao, tt_sangue, d_sim).
+doenca(rc_alto, temp_normal, t_sim, ig_nao, tt_sangue, d_nao).
+doenca(rc_alto, temp_normal, t_sim, ig_nao, tt_nulo, d_sim).
+doenca(rc_alto, temp_normal, t_sim, ig_nao, tt_nulo, d_nao).
+doenca(rc_alto, temp_normal, t_nao, ig_sim, tt_seca, d_sim).
+doenca(rc_alto, temp_normal, t_nao, ig_sim, tt_seca, d_nao).
+doenca(rc_alto, temp_normal, t_nao, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_alto, temp_normal, t_nao, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_alto, temp_normal, t_nao, ig_sim, tt_sangue, d_sim).
+doenca(rc_alto, temp_normal, t_nao, ig_sim, tt_sangue, d_nao).
+doenca(rc_alto, temp_normal, t_nao, ig_sim, tt_nulo, d_sim).
+doenca(rc_alto, temp_normal, t_nao, ig_sim, tt_nulo, d_nao).
+doenca(rc_alto, temp_normal, t_nao, ig_nao, tt_seca, d_sim).
+doenca(rc_alto, temp_normal, t_nao, ig_nao, tt_seca, d_nao).
+doenca(rc_alto, temp_normal, t_nao, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_alto, temp_normal, t_nao, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_alto, temp_normal, t_nao, ig_nao, tt_sangue, d_sim).
+doenca(rc_alto, temp_normal, t_nao, ig_nao, tt_sangue, d_nao).
+doenca(rc_alto, temp_normal, t_nao, ig_nao, tt_nulo, d_sim).
+doenca(rc_alto, temp_normal, t_nao, ig_nao, tt_nulo, d_nao).
+doenca(rc_baixo, temp_alta, t_sim, ig_sim, tt_seca, d_sim).
+doenca(rc_baixo, temp_alta, t_sim, ig_sim, tt_seca, d_nao).
+doenca(rc_baixo, temp_alta, t_sim, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_baixo, temp_alta, t_sim, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_baixo, temp_alta, t_sim, ig_sim, tt_sangue, d_sim).
+doenca(rc_baixo, temp_alta, t_sim, ig_sim, tt_sangue, d_nao).
+doenca(rc_baixo, temp_alta, t_sim, ig_sim, tt_nulo, d_sim).
+doenca(rc_baixo, temp_alta, t_sim, ig_sim, tt_nulo, d_nao).
+doenca(rc_baixo, temp_alta, t_sim, ig_nao, tt_seca, d_sim).
+doenca(rc_baixo, temp_alta, t_sim, ig_nao, tt_seca, d_nao).
+doenca(rc_baixo, temp_alta, t_sim, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_baixo, temp_alta, t_sim, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_baixo, temp_alta, t_sim, ig_nao, tt_sangue, d_sim).
+doenca(rc_baixo, temp_alta, t_sim, ig_nao, tt_sangue, d_nao).
+doenca(rc_baixo, temp_alta, t_sim, ig_nao, tt_nulo, d_sim).
+doenca(rc_baixo, temp_alta, t_sim, ig_nao, tt_nulo, d_nao).
+doenca(rc_baixo, temp_alta, t_nao, ig_sim, tt_seca, d_sim).
+doenca(rc_baixo, temp_alta, t_nao, ig_sim, tt_seca, d_nao).
+doenca(rc_baixo, temp_alta, t_nao, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_baixo, temp_alta, t_nao, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_baixo, temp_alta, t_nao, ig_sim, tt_sangue, d_sim).
+doenca(rc_baixo, temp_alta, t_nao, ig_sim, tt_sangue, d_nao).
+doenca(rc_baixo, temp_alta, t_nao, ig_sim, tt_nulo, d_sim).
+doenca(rc_baixo, temp_alta, t_nao, ig_sim, tt_nulo, d_nao).
+doenca(rc_baixo, temp_alta, t_nao, ig_nao, tt_seca, d_sim).
+doenca(rc_baixo, temp_alta, t_nao, ig_nao, tt_seca, d_nao).
+doenca(rc_baixo, temp_alta, t_nao, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_baixo, temp_alta, t_nao, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_baixo, temp_alta, t_nao, ig_nao, tt_sangue, d_sim).
+doenca(rc_baixo, temp_alta, t_nao, ig_nao, tt_sangue, d_nao).
+doenca(rc_baixo, temp_alta, t_nao, ig_nao, tt_nulo, d_sim).
+doenca(rc_baixo, temp_alta, t_nao, ig_nao, tt_nulo, d_nao).
+doenca(rc_baixo, temp_normal, t_sim, ig_sim, tt_seca, d_sim).
+doenca(rc_baixo, temp_normal, t_sim, ig_sim, tt_seca, d_nao).
+doenca(rc_baixo, temp_normal, t_sim, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_baixo, temp_normal, t_sim, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_baixo, temp_normal, t_sim, ig_sim, tt_sangue, d_sim).
+doenca(rc_baixo, temp_normal, t_sim, ig_sim, tt_sangue, d_nao).
+doenca(rc_baixo, temp_normal, t_sim, ig_sim, tt_nulo, d_sim).
+doenca(rc_baixo, temp_normal, t_sim, ig_sim, tt_nulo, d_nao).
+doenca(rc_baixo, temp_normal, t_sim, ig_nao, tt_seca, d_sim).
+doenca(rc_baixo, temp_normal, t_sim, ig_nao, tt_seca, d_nao).
+doenca(rc_baixo, temp_normal, t_sim, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_baixo, temp_normal, t_sim, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_baixo, temp_normal, t_sim, ig_nao, tt_sangue, d_sim).
+doenca(rc_baixo, temp_normal, t_sim, ig_nao, tt_sangue, d_nao).
+doenca(rc_baixo, temp_normal, t_sim, ig_nao, tt_nulo, d_sim).
+doenca(rc_baixo, temp_normal, t_sim, ig_nao, tt_nulo, d_nao).
+doenca(rc_baixo, temp_normal, t_nao, ig_sim, tt_seca, d_sim).
+doenca(rc_baixo, temp_normal, t_nao, ig_sim, tt_seca, d_nao).
+doenca(rc_baixo, temp_normal, t_nao, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_baixo, temp_normal, t_nao, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_baixo, temp_normal, t_nao, ig_sim, tt_sangue, d_sim).
+doenca(rc_baixo, temp_normal, t_nao, ig_sim, tt_sangue, d_nao).
+doenca(rc_baixo, temp_normal, t_nao, ig_sim, tt_nulo, d_sim).
+doenca(rc_baixo, temp_normal, t_nao, ig_sim, tt_nulo, d_nao).
+doenca(rc_baixo, temp_normal, t_nao, ig_nao, tt_seca, d_sim).
+doenca(rc_baixo, temp_normal, t_nao, ig_nao, tt_seca, d_nao).
+doenca(rc_baixo, temp_normal, t_nao, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_baixo, temp_normal, t_nao, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_baixo, temp_normal, t_nao, ig_nao, tt_sangue, d_sim).
+doenca(rc_baixo, temp_normal, t_nao, ig_nao, tt_sangue, d_nao).
+doenca(rc_baixo, temp_normal, t_nao, ig_nao, tt_nulo, d_sim).
+doenca(rc_baixo, temp_normal, t_nao, ig_nao, tt_nulo, d_nao).
+doenca(rc_normal, temp_alta, t_sim, ig_sim, tt_seca, d_sim).
+doenca(rc_normal, temp_alta, t_sim, ig_sim, tt_seca, d_nao).
+doenca(rc_normal, temp_alta, t_sim, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_normal, temp_alta, t_sim, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_normal, temp_alta, t_sim, ig_sim, tt_sangue, d_sim).
+doenca(rc_normal, temp_alta, t_sim, ig_sim, tt_sangue, d_nao).
+doenca(rc_normal, temp_alta, t_sim, ig_sim, tt_nulo, d_sim).
+doenca(rc_normal, temp_alta, t_sim, ig_sim, tt_nulo, d_nao).
+doenca(rc_normal, temp_alta, t_sim, ig_nao, tt_seca, d_sim).
+doenca(rc_normal, temp_alta, t_sim, ig_nao, tt_seca, d_nao).
+doenca(rc_normal, temp_alta, t_sim, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_normal, temp_alta, t_sim, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_normal, temp_alta, t_sim, ig_nao, tt_sangue, d_sim).
+doenca(rc_normal, temp_alta, t_sim, ig_nao, tt_sangue, d_nao).
+doenca(rc_normal, temp_alta, t_sim, ig_nao, tt_nulo, d_sim).
+doenca(rc_normal, temp_alta, t_sim, ig_nao, tt_nulo, d_nao).
+doenca(rc_normal, temp_alta, t_nao, ig_sim, tt_seca, d_sim).
+doenca(rc_normal, temp_alta, t_nao, ig_sim, tt_seca, d_nao).
+doenca(rc_normal, temp_alta, t_nao, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_normal, temp_alta, t_nao, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_normal, temp_alta, t_nao, ig_sim, tt_sangue, d_sim).
+doenca(rc_normal, temp_alta, t_nao, ig_sim, tt_sangue, d_nao).
+doenca(rc_normal, temp_alta, t_nao, ig_sim, tt_nulo, d_sim).
+doenca(rc_normal, temp_alta, t_nao, ig_sim, tt_nulo, d_nao).
+doenca(rc_normal, temp_alta, t_nao, ig_nao, tt_seca, d_sim).
+doenca(rc_normal, temp_alta, t_nao, ig_nao, tt_seca, d_nao).
+doenca(rc_normal, temp_alta, t_nao, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_normal, temp_alta, t_nao, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_normal, temp_alta, t_nao, ig_nao, tt_sangue, d_sim).
+doenca(rc_normal, temp_alta, t_nao, ig_nao, tt_sangue, d_nao).
+doenca(rc_normal, temp_alta, t_nao, ig_nao, tt_nulo, d_sim).
+doenca(rc_normal, temp_alta, t_nao, ig_nao, tt_nulo, d_nao).
+doenca(rc_normal, temp_normal, t_sim, ig_sim, tt_seca, d_sim).
+doenca(rc_normal, temp_normal, t_sim, ig_sim, tt_seca, d_nao).
+doenca(rc_normal, temp_normal, t_sim, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_normal, temp_normal, t_sim, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_normal, temp_normal, t_sim, ig_sim, tt_sangue, d_sim).
+doenca(rc_normal, temp_normal, t_sim, ig_sim, tt_sangue, d_nao).
+doenca(rc_normal, temp_normal, t_sim, ig_sim, tt_nulo, d_sim).
+doenca(rc_normal, temp_normal, t_sim, ig_sim, tt_nulo, d_nao).
+doenca(rc_normal, temp_normal, t_sim, ig_nao, tt_seca, d_sim).
+doenca(rc_normal, temp_normal, t_sim, ig_nao, tt_seca, d_nao).
+doenca(rc_normal, temp_normal, t_sim, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_normal, temp_normal, t_sim, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_normal, temp_normal, t_sim, ig_nao, tt_sangue, d_sim).
+doenca(rc_normal, temp_normal, t_sim, ig_nao, tt_sangue, d_nao).
+doenca(rc_normal, temp_normal, t_sim, ig_nao, tt_nulo, d_sim).
+doenca(rc_normal, temp_normal, t_sim, ig_nao, tt_nulo, d_nao).
+doenca(rc_normal, temp_normal, t_nao, ig_sim, tt_seca, d_sim).
+doenca(rc_normal, temp_normal, t_nao, ig_sim, tt_seca, d_nao).
+doenca(rc_normal, temp_normal, t_nao, ig_sim, tt_espeturacao, d_sim).
+doenca(rc_normal, temp_normal, t_nao, ig_sim, tt_espeturacao, d_nao).
+doenca(rc_normal, temp_normal, t_nao, ig_sim, tt_sangue, d_sim).
+doenca(rc_normal, temp_normal, t_nao, ig_sim, tt_sangue, d_nao).
+doenca(rc_normal, temp_normal, t_nao, ig_sim, tt_nulo, d_sim).
+doenca(rc_normal, temp_normal, t_nao, ig_sim, tt_nulo, d_nao).
+doenca(rc_normal, temp_normal, t_nao, ig_nao, tt_seca, d_sim).
+doenca(rc_normal, temp_normal, t_nao, ig_nao, tt_seca, d_nao).
+doenca(rc_normal, temp_normal, t_nao, ig_nao, tt_espeturacao, d_sim).
+doenca(rc_normal, temp_normal, t_nao, ig_nao, tt_espeturacao, d_nao).
+doenca(rc_normal, temp_normal, t_nao, ig_nao, tt_sangue, d_sim).
+doenca(rc_normal, temp_normal, t_nao, ig_nao, tt_sangue, d_nao).
+doenca(rc_normal, temp_normal, t_nao, ig_nao, tt_nulo, d_sim).
+doenca(rc_normal, temp_normal, t_nao, ig_nao, tt_nulo, d_nao).
 
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
 
+verdoenca(doenca, Medicamentos) :-
+    findall(Medicamento, sintoma(doenca, Medicamento, _, _, _), Medicamentos).
 
-verdoenca(Sintoma, Medicamentos) :-
-    findall(Medicamento, sintoma(Sintoma, Medicamento, _, _, _), Medicamentos).
-
-
-medicamento_para_doenca(X,Y) :-sintoma(X,Y, _, _, _). %verifica se existe um Y medicamento para uma doença X
+medicamento_para_doenca(X,Y) :-doenca(X,Y, _, _, _). %verifica se existe um Y medicamento para uma doença X

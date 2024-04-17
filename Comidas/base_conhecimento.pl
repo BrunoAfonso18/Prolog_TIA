@@ -1,5 +1,5 @@
 %perfis
-/*
+
 if pizza and vegetariana_sim then 1.
 if pizza and vegetariana_nao then 2.
 if pizza and vegetariana_indiferente then 3.
@@ -16,7 +16,7 @@ if salada and vegetariana_sim then 13.
 if salada and vegetariana_nao then 14.
 if salada and vegetariana_indiferente then 15.
 if ingrediente then 16.
-*/
+
 
 perfil(1,Z):- procuracomida(pizza,vegetariana_sim,Z).
 perfil(2,Z):- procuracomida(pizza,vegetariana_nao,Z).

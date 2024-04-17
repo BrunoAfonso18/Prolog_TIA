@@ -1,3 +1,5 @@
+/*filme(titulo,ano,classificacao,genero(1,2,3),duracao, realizador,ator(1,2)) perfil(id,genero,tempo,rating,faixaetaria)*/
+
 filme('The Shawshank Redemption',1994,'9.3' ,[crime,drama],142,'Frank Darabont',['Tim Robbins', 'Morgan Freeman', 'Bob Gunton', 'William Sadler'],maior18).
 filme('The Godfather',1972,'9.2', [crime,drama],175,'Francis Ford Coppola',['Marlon Brando', 'Al Pacino', 'James Caan', 'Richard S. Castellano'],maior18).
 filme('The Godfather: Part II', 1974,'9',[crime,drama], 202,'Francis Ford Coppola',['Al Pacino', 'Robert Duvall', 'Diane Keaton', 'Robert De Niro'],maior18).
@@ -50,7 +52,6 @@ filme('Witness for the Prosecution',1957,'8.4'	,[crime,drama,misterio],116,  'Bi
 filme('The Dark Knight Rises',2012,'8.5'	,[acao,thriller],164, 'Christopher Nolan' ,['Christian Bale', 'Gary Oldman', 'Tom Hardy', 'Joseph Gordon-Levitt'],menor18).
 filme('WALL-E',2008,'8.4'	,[animacao,aventura,familia],98,  'Andrew Stanton',['Ben Burtt', 'Elissa Knight', 'Jeff Garlin', 'Fred Willard'],menor18).
 
-/*filme(titulo,ano,classificacao,genero(1,2,3),duracao, realizador,ator(1,2)) perfil(id,genero,tempo,rating,faixaetaria)*/
 
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
