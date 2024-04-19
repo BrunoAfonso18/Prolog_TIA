@@ -14,77 +14,75 @@
 
 %   As doenças é que terão o nome do tratamento num Array. Depois a seleção do melhor tratamento e feito na base de conhecimento.
 
-doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_sim, ['Pneumonia', 'Bronquite aguda']).
-doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_nao, ['Gripe Viral', 'Infeção respiratória grave']).
-doenca(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_sim, ['Pneumonia bacteriana']).
-doenca(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_nao, ['Infecao bacteriana', 'Bronquite aguda']).
-doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_sim, ['Pneumonia bacteriana com hemoptise', 'Tuberculose pulmonar avançada', 'Embolia pulmonar']).
-doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_nao, ['Tuberculose pulmonar avançada', 'Cancro no pulmão']).
-doenca(rc_alt, temp_alta, ig_sim, tt_nulo, d_sim, ['Pneumonia bacteriana grave', 'Bronquite aguda com dispneia']).
-doenca(rc_alt, temp_alta, ig_sim, tt_nulo, d_nao, ['Infeção respiratória viral', 'Gripe grave', 'Reação alérgica']).
-
-doenca(rc_alt, temp_alta, ig_nao, tt_seca, d_sim, ['Pneumonia viral', 'Pneumonia bacteriana', 'Crise de asma']).
-doenca(rc_alt, temp_alta, ig_nao, tt_seca, d_nao, ['Constipação comum', 'Infeção respiratória viral', 'Gripe grave']).
-doenca(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_sim, ['Pneumonia Bacteriana', 'Bronquite bacteriana']).
-doenca(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_nao, ['Bronquite aguda', 'Pneumonia viral']).
-doenca(rc_alt, temp_alta, ig_nao, tt_sangue, d_sim, ['Embolia pulmunar', 'Pneumonia com hemoptise', 'Tuberculose pulmonar avançada']).
-doenca(rc_alt, temp_alta, ig_nao, tt_sangue, d_nao, ['Bronquite crónica com hemoptise', 'Bronquiectasia', 'Cancro no pulmão']).
-doenca(rc_alt, temp_alta, ig_nao, tt_nulo, d_sim, ['Insuficiência cardíaca aguda', 'Doença pulmonar obstrutiva crónica', 'Fibrose pulmonar']).
-doenca(rc_alt, temp_alta, ig_nao, tt_nulo, d_nao, ['Pneumonia bacteriana atípica', 'Infeção pulmonar com septicemia']).
-
-doenca(rc_alt, temp_normal, ig_sim, tt_seca, d_sim, ['Condição pulmonar aguda', 'Asma aguda', 'Bronquite aguda']).
-doenca(rc_alt, temp_normal, ig_sim, tt_seca, d_nao, ['Condição pulmonar aguda', 'Faringite']).
-doenca(rc_alt, temp_normal, ig_sim, tt_espeturacao, d_sim, ['Infeção pulmonar bacteriana', 'Pneumonia bacteriana']).
-doenca(rc_alt, temp_normal, ig_sim, tt_espeturacao, d_nao, ['Bronquite aguda', 'Infeção respiratória viral']).
-doenca(rc_alt, temp_normal, ig_sim, tt_sangue, d_sim, ['Embolia pulmunar', 'Pneumonia com hemoptise', 'Tuberculose pulmonar avançada', 'Pneumonia bacteriana com hemoptise']).
-doenca(rc_alt, temp_normal, ig_sim, tt_sangue, d_nao, ['Tuberculose pulmonar', 'Cancro no pulmão em estágio inicial/avançado', 'Bronquiectasia', 'Infeção pulmonar bacteriana com hemoptise']).
-doenca(rc_alt, temp_normal, ig_sim, tt_nulo, d_sim, ['Insuficiência cardíaca congestiva', 'Edema pulmonar', 'Embolia pulmonar', 'Bronquite aguda com obstrução grave das vias aéreas']).
-doenca(rc_alt, temp_normal, ig_sim, tt_nulo, d_nao, ['Infeção viral leve', 'Ansiedade /stress']).
-
-doenca(rc_alt, temp_normal, ig_nao, tt_seca, d_sim, ['Asma', 'Doença pulmonar obstrutiva crónica']).
-doenca(rc_alt, temp_normal, ig_nao, tt_seca, d_nao, ['Asma leve/intermitente', 'Refluxo gastroesofágico', 'Tosse psicogénica']).
-doenca(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_sim, ['Bronquite crónica', 'Fibrose cística']).
-doenca(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_nao, ['Bronquite aguda', 'Pneumonia leve/atípica']).
-doenca(rc_alt, temp_normal, ig_nao, tt_sangue, d_sim, ['Pneumonia com complicação', 'Bronquiectasia']).
-doenca(rc_alt, temp_normal, ig_nao, tt_sangue, d_nao, ['Aspergilose broncopulmonar alérgica', 'Bronquiectasia']).
-doenca(rc_alt, temp_normal, ig_nao, tt_nulo, d_sim, ['Insuficiência cardíaca congestiva', 'Doença pulmonar intersticial', 'Pneumotórax']).
-doenca(rc_alt, temp_normal, ig_nao, tt_nulo, d_nao, ['Hipertireoidismo', 'Outras condições cardíacas']).
-
-doenca(rc_normal, temp_alta, ig_sim, tt_seca, d_sim, ['Amigdalite', 'Faringite']).
-doenca(rc_normal, temp_alta, ig_sim, tt_seca, d_nao, ['Rinite alérgica', 'Reação alérgica']).
-doenca(rc_normal, temp_alta, ig_sim, tt_espeturacao, d_sim, ['Abcesso pulmonar', 'Bronquite bacteriana']).
-doenca(rc_normal, temp_alta, ig_sim, tt_espeturacao, d_nao, ['Sinusite', 'Amigdalite bacteriana', 'Faringite bacteriana']).
-doenca(rc_normal, temp_alta, ig_sim, tt_sangue, d_sim, ['Embolia pulmonar', 'Tuberculose']).
-doenca(rc_normal, temp_alta, ig_sim, tt_sangue, d_nao, ['Traqueobronquite', 'Sinusite crônica']).
-doenca(rc_normal, temp_alta, ig_sim, tt_nulo, d_sim, ['Edema pulmonar', 'Asma grave']).
-doenca(rc_normal, temp_alta, ig_sim, tt_nulo, d_nao, ['Amigdalite crônica', 'Reação alérgica']).
-
-doenca(rc_normal, temp_alta, ig_nao, tt_seca, d_sim, ['Insuficiência cardíaca congestiva', 'Asma']).
-doenca(rc_normal, temp_alta, ig_nao, tt_seca, d_nao, ['Infecção respiratória superior', 'Faringite viral']).
-doenca(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_sim, ['Pneumonia bacteriana','Bronquite aguda']).
-doenca(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_nao, ['Bronquite aguda','Infeção respiratória viral']).
-doenca(rc_normal, temp_alta, ig_nao, tt_sangue, d_sim, ['Embolia pulmonar','Tuberculose pulmonar avançada']).
-doenca(rc_normal, temp_alta, ig_nao, tt_sangue, d_nao, ['Bronquite crónica com hemoptise','Tubercolose pulmonar leve']).
-doenca(rc_normal, temp_alta, ig_nao, tt_nulo, d_sim, ['Fibrose pulmonar','Insuficiência cardíaca aguda','Doença pulmonar obstrutiva crónica']).
-doenca(rc_normal, temp_alta, ig_nao, tt_nulo, d_nao, ['Gripe leve','Infeção respiratória viral']).
-
-doenca(rc_normal, temp_normal, ig_sim, tt_seca, d_sim, ['Faringite','Amigdalite']).
-doenca(rc_normal, temp_normal, ig_sim, tt_seca, d_nao, ['Rinite alérgica', 'Reação alérgica']).
-doenca(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_sim, ['Sinusite','Infeção respiratória bacteriana']).
-doenca(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_nao, ['Sinusite','Bronquite aguda']).
-doenca(rc_normal, temp_normal, ig_sim, tt_sangue, d_sim, ['Embolia pulmonar','Pneumonia bacteriana com hemoptise','Tuberculose pulmonar']).
-doenca(rc_normal, temp_normal, ig_sim, tt_sangue, d_nao, ['Faringite','Amigdalite','Sinusite']).
-doenca(rc_normal, temp_normal, ig_sim, tt_nulo, d_sim, ['Edema pulmonar','Bronquite aguda','Insuficiência cardíaca congestiva']).
-doenca(rc_normal, temp_normal, ig_sim, tt_nulo, d_nao, ['Rinite alérgica', 'Reação alérgica']).
-
-doenca(rc_normal, temp_normal, ig_nao, tt_seca, d_sim, ['Doença pulmonar obstrutiva crónica','Asma']).
-doenca(rc_normal, temp_normal, ig_nao, tt_seca, d_nao, ['Refluxo gastroesofágico','Asma','Tosse psicogénica']).
-doenca(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_sim, ['Pneumonia bacteriana','Bronquite bacteriana']).
-doenca(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_nao, ['Bronquite aguda','Pneumonia viral','Infeção respiratória viral']).
-doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_sim, ['Embolia pulmonar','Bronquiectasia','Pneumonia com complicação']).
-doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_nao, ['Reação alérgica','Amigdalite crônica']).
-doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_sim, ['Bronquite aguda','Edema pulmonar']).
-doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, ['Asma','Rinite alérgica','Tosse psicogénica']).
+% TRATAMENTOS
+% -g gravidas
+% -a alergias
+% -n paciente normal
+ 
+doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_sim, 'Infeção respiratória grave', ['Amoxicilina-g', 'Clindamicina-a', 'Amoxicilina-clavulanato-n']).
+doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_nao, 'Gripe viral').
+doenca(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_sim, 'Pneumotórax').
+doenca(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_nao, 'Infeção bacteriana').
+doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_sim, 'Pneumonia bacteriana com hemoptise').
+doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_nao, 'Tuberculose pulmonar avançada').
+doenca(rc_alt, temp_alta, ig_sim, tt_nulo, d_sim, 'Pneumonia bacteriana grave').
+doenca(rc_alt, temp_alta, ig_sim, tt_nulo, d_nao, 'Infeção respiratória viral').
+doenca(rc_alt, temp_alta, ig_nao, tt_seca, d_sim, 'Doença pulmonar intersticial').
+doenca(rc_alt, temp_alta, ig_nao, tt_seca, d_nao, 'Gripe grave').
+doenca(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_sim, 'Bronquite bacteriana').
+doenca(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_nao, 'Pneumonia viral leve').
+doenca(rc_alt, temp_alta, ig_nao, tt_sangue, d_sim, 'Pneumonia com hemoptise').
+doenca(rc_alt, temp_alta, ig_nao, tt_sangue, d_nao, 'Bronquite crónica com hemoptise').
+doenca(rc_alt, temp_alta, ig_nao, tt_nulo, d_sim, 'Insuficiência cardíaca aguda').
+doenca(rc_alt, temp_alta, ig_nao, tt_nulo, d_nao, 'Pneumonia bacteriana atípica').
+doenca(rc_alt, temp_normal, ig_sim, tt_seca, d_sim, 'Asma aguda').
+doenca(rc_alt, temp_normal, ig_sim, tt_seca, d_nao, 'Condição pulmonar aguda').
+doenca(rc_alt, temp_normal, ig_sim, tt_espeturacao, d_sim, 'Infeção pulmonar bacteriana').
+doenca(rc_alt, temp_normal, ig_sim, tt_espeturacao, d_nao, 'Bronquioectasia estável').
+doenca(rc_alt, temp_normal, ig_sim, tt_sangue, d_sim, 'Embolia pulmonar').
+doenca(rc_alt, temp_normal, ig_sim, tt_sangue, d_nao, 'Infeção pulmonar bacteriana com hemoptise').
+doenca(rc_alt, temp_normal, ig_sim, tt_nulo, d_sim, 'Bronquite aguda com dispneia').
+doenca(rc_alt, temp_normal, ig_sim, tt_nulo, d_nao, 'Infeção viral leve').
+doenca(rc_alt, temp_normal, ig_nao, tt_seca, d_sim, 'Doença pulmonar obstrutiva crónica').
+doenca(rc_alt, temp_normal, ig_nao, tt_seca, d_nao, 'Refluxo gastroesofágico').
+doenca(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_sim, 'Fibrose cística').
+doenca(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_nao, 'Bronquite aguda').
+doenca(rc_alt, temp_normal, ig_nao, tt_sangue, d_sim, 'Bronquiectasia').
+doenca(rc_alt, temp_normal, ig_nao, tt_sangue, d_nao, 'Aspergilose broncopulmonar alérgica').
+doenca(rc_alt, temp_normal, ig_nao, tt_nulo, d_sim, 'Insuficiência cardíaca congestiva').
+doenca(rc_alt, temp_normal, ig_nao, tt_nulo, d_nao, 'Taquicardia').
+doenca(rc_normal, temp_alta, ig_sim, tt_seca, d_sim, 'Amigdalite').
+doenca(rc_normal, temp_alta, ig_sim, tt_seca, d_nao, 'Rinite alérgica').
+doenca(rc_normal, temp_alta, ig_sim, tt_espeturacao, d_sim, 'Abcesso pulmonar').
+doenca(rc_normal, temp_alta, ig_sim, tt_espeturacao, d_nao, 'Faringite bacteriana').
+doenca(rc_normal, temp_alta, ig_sim, tt_sangue, d_sim, 'Tuberculose').
+doenca(rc_normal, temp_alta, ig_sim, tt_sangue, d_nao, 'Traqueobronquite').
+doenca(rc_normal, temp_alta, ig_sim, tt_nulo, d_sim, 'Edema pulmonar').
+doenca(rc_normal, temp_alta, ig_sim, tt_nulo, d_nao, 'Amigdalite crônica').
+doenca(rc_normal, temp_alta, ig_nao, tt_seca, d_sim, 'Fibrose pulmonar').
+doenca(rc_normal, temp_alta, ig_nao, tt_seca, d_nao, 'Infeção respiratória superior').
+doenca(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_sim, 'Infeção respiratória aguda').
+doenca(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_nao, 'Constipação comum').
+doenca(rc_normal, temp_alta, ig_nao, tt_sangue, d_sim, 'Tuberculose pulmonar').
+doenca(rc_normal, temp_alta, ig_nao, tt_sangue, d_nao, 'Tromboembolia pulmonar').
+doenca(rc_normal, temp_alta, ig_nao, tt_nulo, d_sim, 'Asma').
+doenca(rc_normal, temp_alta, ig_nao, tt_nulo, d_nao, 'Febre comum').
+doenca(rc_normal, temp_normal, ig_sim, tt_seca, d_sim, 'Laringite Grave').
+doenca(rc_normal, temp_normal, ig_sim, tt_seca, d_nao, 'Laringite Leve').
+doenca(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_sim, 'Pneumonia comum').
+doenca(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_nao, 'Faringite aguda bacteriana').
+doenca(rc_normal, temp_normal, ig_sim, tt_sangue, d_sim, 'Embolia pulmonar').
+doenca(rc_normal, temp_normal, ig_sim, tt_sangue, d_nao, 'Tuberculose laringotraqueobrônquica').
+doenca(rc_normal, temp_normal, ig_sim, tt_nulo, d_sim, 'Epiglotite').
+doenca(rc_normal, temp_normal, ig_sim, tt_nulo, d_nao, 'Inflamação na garganta').
+doenca(rc_normal, temp_normal, ig_nao, tt_seca, d_sim, 'Fibrose pulmonar idiopática').
+doenca(rc_normal, temp_normal, ig_nao, tt_seca, d_nao, 'Irritação na garganta').
+doenca(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_sim, 'Bronquite crónica').
+doenca(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_nao, 'Tosse com obstrução').
+doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_sim, 'Cancro avançado').
+doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_nao, 'Inflamação pulmonar').
+doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_sim, 'Ataque de asma').
+doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, 'Sem doenças pulmonares, procure ajuda noutra área').
 
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
