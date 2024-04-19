@@ -61,30 +61,30 @@ doenca(rc_normal, temp_alta, ig_sim, tt_nulo, d_nao, ['Amigdalite crônica', 'Re
 
 doenca(rc_normal, temp_alta, ig_nao, tt_seca, d_sim, ['Insuficiência cardíaca congestiva', 'Asma']).
 doenca(rc_normal, temp_alta, ig_nao, tt_seca, d_nao, ['Infecção respiratória superior', 'Faringite viral']).
-doenca(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_sim, []).
-doenca(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_nao, []).
-doenca(rc_normal, temp_alta, ig_nao, tt_sangue, d_sim, []).
-doenca(rc_normal, temp_alta, ig_nao, tt_sangue, d_nao, []).
-doenca(rc_normal, temp_alta, ig_nao, tt_nulo, d_sim, []).
-doenca(rc_normal, temp_alta, ig_nao, tt_nulo, d_nao, []).
+doenca(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_sim, ['Pneumonia bacteriana','Bronquite aguda']).
+doenca(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_nao, ['Bronquite aguda','Infeção respiratória viral']).
+doenca(rc_normal, temp_alta, ig_nao, tt_sangue, d_sim, ['Embolia pulmonar','Tuberculose pulmonar avançada']).
+doenca(rc_normal, temp_alta, ig_nao, tt_sangue, d_nao, ['Bronquite crónica com hemoptise','Tubercolose pulmonar leve']).
+doenca(rc_normal, temp_alta, ig_nao, tt_nulo, d_sim, ['Fibrose pulmonar','Insuficiência cardíaca aguda','Doença pulmonar obstrutiva crónica']).
+doenca(rc_normal, temp_alta, ig_nao, tt_nulo, d_nao, ['Gripe leve','Infeção respiratória viral']).
 
-doenca(rc_normal, temp_normal, ig_sim, tt_seca, d_sim, []).
-doenca(rc_normal, temp_normal, ig_sim, tt_seca, d_nao, []).
-doenca(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_sim, []).
-doenca(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_nao, []).
-doenca(rc_normal, temp_normal, ig_sim, tt_sangue, d_sim, []).
-doenca(rc_normal, temp_normal, ig_sim, tt_sangue, d_nao, []).
-doenca(rc_normal, temp_normal, ig_sim, tt_nulo, d_sim, []).
-doenca(rc_normal, temp_normal, ig_sim, tt_nulo, d_nao, []).
+doenca(rc_normal, temp_normal, ig_sim, tt_seca, d_sim, ['Faringite','Amigdalite']).
+doenca(rc_normal, temp_normal, ig_sim, tt_seca, d_nao, ['Rinite alérgica', 'Reação alérgica']).
+doenca(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_sim, ['Sinusite','Infeção respiratória bacteriana']).
+doenca(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_nao, ['Sinusite','Bronquite aguda']).
+doenca(rc_normal, temp_normal, ig_sim, tt_sangue, d_sim, ['Embolia pulmonar','Pneumonia bacteriana com hemoptise','Tuberculose pulmonar']).
+doenca(rc_normal, temp_normal, ig_sim, tt_sangue, d_nao, ['Faringite','Amigdalite','Sinusite']).
+doenca(rc_normal, temp_normal, ig_sim, tt_nulo, d_sim, ['Edema pulmonar','Bronquite aguda','Insuficiência cardíaca congestiva']).
+doenca(rc_normal, temp_normal, ig_sim, tt_nulo, d_nao, ['Rinite alérgica', 'Reação alérgica']).
 
-doenca(rc_normal, temp_normal, ig_nao, tt_seca, d_sim, []).
-doenca(rc_normal, temp_normal, ig_nao, tt_seca, d_nao, []).
-doenca(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_sim, []).
-doenca(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_nao, []).
-doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_sim, []).
-doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_nao, []).
-doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_sim, []).
-doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, []).
+doenca(rc_normal, temp_normal, ig_nao, tt_seca, d_sim, ['Doença pulmonar obstrutiva crónica','Asma']).
+doenca(rc_normal, temp_normal, ig_nao, tt_seca, d_nao, ['Refluxo gastroesofágico','Asma','Tosse psicogénica']).
+doenca(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_sim, ['Pneumonia bacteriana','Bronquite bacteriana']).
+doenca(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_nao, ['Bronquite aguda','Pneumonia viral','Infeção respiratória viral']).
+doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_sim, ['Embolia pulmonar','Bronquiectasia','Pneumonia com complicação']).
+doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_nao, ['Reação alérgica','Amigdalite crônica']).
+doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_sim, ['Bronquite aguda','Edema pulmonar']).
+doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, ['Asma','Rinite alérgica','Tosse psicogénica']).
 
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
