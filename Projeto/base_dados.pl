@@ -82,14 +82,4 @@ doenca(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_nao, 'Tosse com obstru�
 doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_sim, 'Cancro avançado',['Morfina-n', 'Oxicodona-g', 'Fentanil-a']).
 doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_nao, 'Inflamação pulmonar',['Paracetamol-n', 'Ibuprofeno-g', 'Dipirona-a']).
 doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_sim, 'Ataque de asma',['Salbutamol-n', 'Beclometasona-g', 'Montelucaste-a']).
-doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, 'Sem doenças pulmonares, procure ajuda noutra área',['Sem doenças pulmunares']).
-
-
-
-membro( X, [X|_] ).
-membro( X, [_|R] ) :- membro( X, R ).
-
-verdoenca(doenca, Medicamentos) :-
-    findall(Medicamento, sintoma(doenca, Medicamento, _, _, _), Medicamentos).
-
-medicamento_para_doenca(X,Y) :-doenca(X,Y, _, _, _). %verifica se existe um Y medicamento para uma doença X
+doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, 'Sem doenças pulmonares, procure ajuda noutra área',[]).
