@@ -82,6 +82,20 @@ questao5:-	write('\e[H\e[2J'),
 			(
 			(A5 == 1),assert(fact(di_sim)), resultado;
             (A5 == 2),assert(fact(di_nao)), resultado).
+
+questao6:- 	write('\e[H\e[2J'),
+			write('                                                                                                        '), nl,
+			write('                                                                                                        '), nl,
+			write('    Insira a restricao que possui no que diz respeito a receita de medicamentos:'), nl,nl, 
+			write('    1 - Gravidez'), nl,
+			write('    2 - Alergias'), nl, 
+			write('    3 - Nenhuma'),nl,
+			write('  '),nl,nl,			
+			read(A6), assert(variavel(A6)),
+			(
+			(A6 == 1),assert(variavel(gravidez)), resultado;
+			(A6 == 2),assert(variavel(alergias)), resultado;
+            (A6 == 2),assert(variavel(normal)), resultado).
 			
 			
 resultado :- 	write('\e[H\e[2J'),
@@ -90,8 +104,8 @@ resultado :- 	write('\e[H\e[2J'),
 				write('                                           Diagnostico                                             '), nl, 
 				result.
 
-resultadowrite(P):-	variavel(A4),nl,
+resultadowrite(P):-	variavel(A6),nl,
 					write('     O seu perfil e o: '),write(P),write('    '),nl,nl,
-					write('     O paciente encontra se com: '),perfil(P,A4),nl,nl,
+					write('     O paciente encontra se com: '),perfil(P,A6),nl,nl,
 					write('                                                                                                        '),
-					retract(variavel(A4)), retractall(fact(_)).
+					retract(variavel(A6)), retractall(fact(_)).

@@ -15,9 +15,10 @@
 %   As doenças é que terão o nome do tratamento num Array. Depois a seleção do melhor tratamento e feito na base de conhecimento.
 
 % TRATAMENTOS
+% -n paciente normal
 % -g gravidas
 % -a alergias
-% -n paciente normal
+
  
 doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_sim, 'Infeção respiratória grave', ['Amoxicilina-g', 'Clindamicina-a', 'Amoxicilina-clavulanato-n']).
 doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_nao, 'Gripe viral',['Paracetamol-g','Ibuprofeno-n','Aspirina-a']).
@@ -27,7 +28,7 @@ doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_sim, 'Pneumonia bacteriana com he
 doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_nao, 'Tuberculose pulmonar avançada',['Rifampicina-g','isoniazida-n','Consultar medico-a']).
 doenca(rc_alt, temp_alta, ig_sim, tt_nulo, d_sim, 'Pneumonia bacteriana grave',['Levofloxacino-n','Ceftriaxona-g','Descanso-a']).
 doenca(rc_alt, temp_alta, ig_sim, tt_nulo, d_nao, 'Infeção respiratória viral',['Zanamivir-n','Oseltamivir-g','Oximetazolina-a']).
-doenca(rc_alt, temp_alta, ig_nao, tt_seca, d_sim, 'Doença pulmonar intersticial',['Nintedanibe-n','Prednisona-g',' albuterol-a']).
+doenca(rc_alt, temp_alta, ig_nao, tt_seca, d_sim, 'Doença pulmonar intersticial',['Nintedanibe-n','Prednisona-g',' Albuterol-a']).
 doenca(rc_alt, temp_alta, ig_nao, tt_seca, d_nao, 'Gripe grave',['Oseltamivir-n','Oseltamivir-g','Zanamivir-a']).
 doenca(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_sim, 'Bronquite bacteriana',['Azitromicina-n','Amoxicilina-g','Claritromicina-a']).
 doenca(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_nao, 'Pneumonia viral leve',['Paracetamol-n','Paracetamol-g','guaifenesina-a']).
@@ -83,3 +84,7 @@ doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_sim, 'Cancro avançado',['Mo
 doenca(rc_normal, temp_normal, ig_nao, tt_sangue, d_nao, 'Inflamação pulmonar',['Paracetamol-n', 'Ibuprofeno-g', 'Dipirona-a']).
 doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_sim, 'Ataque de asma',['Salbutamol-n', 'Beclometasona-g', 'Montelucaste-a']).
 doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, 'Sem doenças pulmonares, procure ajuda noutra área',[]).
+
+tratamentos('Amoxicilina-clavulanato', normal).
+tratamentos('Clindamicina', alergias).
+
