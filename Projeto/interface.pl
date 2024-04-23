@@ -91,7 +91,7 @@ questao6:- 	write('\e[H\e[2J'),
 			write('    2 - Alergias'), nl, 
 			write('    3 - Nenhuma'),nl,
 			write('  '),nl,nl,			
-			read(A6), assert(variavel(A6)),
+			read(A6),
 			(
 			(A6 == 1),assert(variavel(gravidez)), resultado;
 			(A6 == 2),assert(variavel(alergias)), resultado;

@@ -65,70 +65,70 @@ if rc_normal and temp_normal and ig_nao and tt_sangue and d_nao then 62.
 if rc_normal and temp_normal and ig_nao and tt_nulo and d_sim then 63.
 if rc_normal and temp_normal and ig_nao and tt_nulo and d_nao then 64.
 
-perfil(1, Z):- verdiagnostico().
-perfil(2, Z):- verdiagnostico().
-perfil(3, Z):- verdiagnostico().
-perfil(4, Z):- verdiagnostico().
-perfil(5, Z):- verdiagnostico().
-perfil(6, Z):- verdiagnostico().
-perfil(7, Z):- verdiagnostico().
-perfil(8, Z):- verdiagnostico().
-perfil(9, Z):- verdiagnostico().
-perfil(10, Z):- verdiagnostico().
-perfil(11, Z):- verdiagnostico().
-perfil(12, Z):- verdiagnostico().
-perfil(13, Z):- verdiagnostico().
-perfil(14, Z):- verdiagnostico().
-perfil(15, Z):- verdiagnostico().
-perfil(16, Z):- verdiagnostico().
-perfil(17, Z):- verdiagnostico().
-perfil(18, Z):- verdiagnostico().
-perfil(19, Z):- verdiagnostico().
-perfil(20, Z):- verdiagnostico().
-perfil(21, Z):- verdiagnostico().
-perfil(22, Z):- verdiagnostico().
-perfil(23, Z):- verdiagnostico().
-perfil(24, Z):- verdiagnostico().
-perfil(25, Z):- verdiagnostico().
-perfil(26, Z):- verdiagnostico().
-perfil(27, Z):- verdiagnostico().
-perfil(28, Z):- verdiagnostico().
-perfil(29, Z):- verdiagnostico().
-perfil(30, Z):- verdiagnostico().
-perfil(31, Z):- verdiagnostico().
-perfil(32, Z):- verdiagnostico().
-perfil(33, Z):- verdiagnostico().
-perfil(34, Z):- verdiagnostico().
-perfil(35, Z):- verdiagnostico().
-perfil(36, Z):- verdiagnostico().
-perfil(37, Z):- verdiagnostico().
-perfil(38, Z):- verdiagnostico().
-perfil(39, Z):- verdiagnostico().
-perfil(40, Z):- verdiagnostico().
-perfil(41, Z):- verdiagnostico().
-perfil(42, Z):- verdiagnostico().
-perfil(43, Z):- verdiagnostico().
-perfil(44, Z):- verdiagnostico().
-perfil(45, Z):- verdiagnostico().
-perfil(46, Z):- verdiagnostico().
-perfil(47, Z):- verdiagnostico().
-perfil(48, Z):- verdiagnostico().
-perfil(49, Z):- verdiagnostico().
-perfil(50, Z):- verdiagnostico().
-perfil(51, Z):- verdiagnostico().
-perfil(52, Z):- verdiagnostico().
-perfil(53, Z):- verdiagnostico().
-perfil(54, Z):- verdiagnostico().
-perfil(55, Z):- verdiagnostico().
-perfil(56, Z):- verdiagnostico().
-perfil(57, Z):- verdiagnostico().
-perfil(58, Z):- verdiagnostico().
-perfil(59, Z):- verdiagnostico().
-perfil(60, Z):- verdiagnostico().
-perfil(61, Z):- verdiagnostico().
-perfil(62, Z):- verdiagnostico().
-perfil(63, Z):- verdiagnostico().
-perfil(64, Z):- verdiagnostico().
+perfil(1, Z):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_seca, d_sim, Z) .
+perfil(2, Z):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_seca, d_nao, Z) .
+perfil(3, Z):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_sim, Z) .
+perfil(4, Z):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_nao, Z) .
+perfil(5, Z):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_sangue, d_sim, Z) .
+perfil(6, Z):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_sangue, d_nao, Z) .
+perfil(7, Z):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_nulo, d_sim, Z) .
+perfil(8, Z):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_nulo, d_nao, Z) .
+perfil(9, Z):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_seca, d_sim, Z) .
+perfil(10, Z):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_seca, d_nao, Z) .
+perfil(11, Z):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_sim, Z) .
+perfil(12, Z):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_nao, Z) .
+perfil(13, Z):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_sangue, d_sim, Z) .
+perfil(14, Z):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_sangue, d_nao, Z) .
+perfil(15, Z):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_nulo, d_sim, Z) .
+perfil(16, Z):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_nulo, d_nao, Z) .
+perfil(17, Z):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_seca, d_sim, Z) .
+perfil(18, Z):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_seca, d_nao, Z) .
+perfil(19, Z):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_espeturacao, d_sim, Z) .
+perfil(20, Z):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_espeturacao, d_nao, Z) .
+perfil(21, Z):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_sangue, d_sim, Z) .
+perfil(22, Z):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_sangue, d_nao, Z) .
+perfil(23, Z):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_nulo, d_sim, Z) .
+perfil(24, Z):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_nulo, d_nao, Z) .
+perfil(25, Z):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_seca, d_sim, Z) .
+perfil(26, Z):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_seca, d_nao, Z) .
+perfil(27, Z):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_sim, Z) .
+perfil(28, Z):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_nao, Z) .
+perfil(29, Z):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_sangue, d_sim, Z) .
+perfil(30, Z):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_sangue, d_nao, Z) .
+perfil(31, Z):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_nulo, d_sim, Z) .
+perfil(32, Z):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_nulo, d_nao, Z) .
+perfil(33, Z):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_seca, d_sim, Z) .
+perfil(34, Z):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_seca, d_nao, Z) .
+perfil(35, Z):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_espeturacao, d_sim, Z) .
+perfil(36, Z):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_espeturacao, d_nao, Z) .
+perfil(37, Z):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_sangue, d_sim, Z) .
+perfil(38, Z):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_sangue, d_nao, Z) .
+perfil(39, Z):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_nulo, d_sim, Z) .
+perfil(40, Z):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_nulo, d_nao, Z) .
+perfil(41, Z):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_seca, d_sim, Z) .
+perfil(42, Z):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_seca, d_nao, Z) .
+perfil(43, Z):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_sim, Z) .
+perfil(44, Z):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_nao, Z) .
+perfil(45, Z):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_sangue, d_sim, Z) .
+perfil(46, Z):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_sangue, d_nao, Z) .
+perfil(47, Z):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_nulo, d_sim, Z) .
+perfil(48, Z):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_nulo, d_nao, Z) .
+perfil(49, Z):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_seca, d_sim, Z) .
+perfil(50, Z):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_seca, d_nao, Z) .
+perfil(51, Z):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_sim, Z) .
+perfil(52, Z):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_nao, Z) .
+perfil(53, Z):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_sangue, d_sim, Z) .
+perfil(54, Z):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_sangue, d_nao, Z) .
+perfil(55, Z):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_nulo, d_sim, Z) .
+perfil(56, Z):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_nulo, d_nao, Z) .
+perfil(57, Z):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_seca, d_sim, Z) .
+perfil(58, Z):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_seca, d_nao, Z) .
+perfil(59, Z):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_sim, Z) .
+perfil(60, Z):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_nao, Z) .
+perfil(61, Z):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_sangue, d_sim, Z) .
+perfil(62, Z):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_sangue, d_nao, Z) .
+perfil(63, Z):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_nulo, d_sim, Z) .
+perfil(64, Z):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, Z) .
 
 
 
@@ -137,3 +137,12 @@ membro( X, [_|R] ) :- membro( X, R ).
 
 verdiagnostico(Ritmo_card,Temp,Inchaco,Tosse,Dispneia) :-
     findall(Medicamento, sintoma(doenca, Medicamento, _, _, _), Medicamentos).
+
+%lista todas as comidas
+lista_comidas:-findall([Tipo,Nome,Preco,Loja],(comida(Tipo,Nome,_,_,_,Preco,Loja,_)),Lista_comidas), print(Lista_comidas).
+
+%procura por ingrediente
+procuraingrediente(Ingrediente):- findall([Tipo,Nome,Preco,Loja],(comida(Tipo,Nome,_,_,_,Preco,Loja,Ingredientes), membro(Ingrediente,Ingredientes)),Lista_comidas), print(Lista_comidas).
+
+%procura por comida
+procuracomida(Tipo,Vegetariana_SN,Preco_max):- findall([Tipo,Nome,Preco,Loja],(comida(Tipo,Nome,_,Vegetariana_SN,_,Preco,Loja,_), Preco<Preco_max),Lista_comidas), print(Lista_comidas).
