@@ -135,5 +135,5 @@ perfil(64, Z):- verdiagnostico().
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
 
-verdoenca(doenca, Medicamentos) :-
+verdiagnostico(Ritmo_card,Temp,Inchaco,Tosse,Dispneia) :-
     findall(Medicamento, sintoma(doenca, Medicamento, _, _, _), Medicamentos).
