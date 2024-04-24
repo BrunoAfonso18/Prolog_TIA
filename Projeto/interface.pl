@@ -94,8 +94,8 @@ questao6:- 	write('\e[H\e[2J'),
 			read(A6),
 			(
 				(A6 == 1), assert(variavel(gravidez)), resultado;
-				(A6 == 2), assert(fact(alergias)), resultado;
-				(A6 == 3), assert(fact(normal)), resultado).			
+				(A6 == 2), assert(variavel(alergias)), resultado;
+				(A6 == 3), assert(variavel(normal)), resultado).			
 			
 resultado :- 	write('\e[H\e[2J'),
 				write('                                                                                                        '), nl,

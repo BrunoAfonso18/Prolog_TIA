@@ -141,11 +141,15 @@ lista_doencas:-findall([Diagnostico],
     (doenca(_,_,_,_,_,Diagnostico,_)),Lista_doencas), 
     print(Lista_doencas).
 
+lista_tratamentos(Condicao):-findall([Tratamento],
+    (tratamentos(Tratamentos,Variavel),Condicao==Variavel),Lista_tratamentos), 
+    print(Lista_tratamentos).
+
 verdiagnostico(Rc,Temp,Inch,Tosse,Disp,Tratamento):- findall([Rc,Temp,Inch,Tosse,Disp],
     (doenca(Rc,Temp,Inch,Tosse,Disp,_,_)),Lista_doencas), 
-    print(Lista_doencas).
+    print(Lista_doencas, Lista_trataemntos).
 
 %usado na main
-verdiagnostico(Rc, Temp, Ig, Tt, D) :-
-    doenca(Rc, Temp, Ig, Tt, D, Diagnostico, Tratamento),
-    writeln(Diagnostico, Tratamento).
+%verdiagnostico(Rc, Temp, Ig, Tt, D) :-
+%    doenca(Rc, Temp, Ig, Tt, D, Diagnostico, Tratamento),
+%    writeln(Diagnostico, Tratamento).
