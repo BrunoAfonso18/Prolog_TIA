@@ -80,22 +80,22 @@ questao5:-	write('\e[H\e[2J'),
 			write('                                                                                                        '), nl,
 			read(A5),
 			(
-			(A5 == 1),assert(fact(d_sim)), resultado;
-            (A5 == 2),assert(fact(d_nao)), resultado).
+			(A5 == 1),assert(fact(d_sim)), questao6;
+            (A5 == 2),assert(fact(d_nao)), questao6).
 
-%questao6:- 	write('\e[H\e[2J'),
-%			write('                                                                                                        '), nl,
-%			write('                                                                                                        '), nl,
-%			write('    Indique que condicao podera ter que podera impedir o tratamento:'), nl, 
-%			write('    1 - Gravidez'), nl,
-%			write('    2 - Alergias'), nl, 
-%			write('    3 - Nenhuma'),nl,
-%			write('  '),nl,nl,			
-%			read(A6),
-%			(
-%				(A6 == 1), assert(variavel(gravidez)), resultado;
-%				(A6 == 2), assert(fact(alergias)), resultado;
-%				(A6 == 3), assert(fact(normal)), resultado).			
+questao6:- 	write('\e[H\e[2J'),
+			write('                                                                                                        '), nl,
+			write('                                                                                                        '), nl,
+			write('    Indique que condicao podera ter que podera impedir o tratamento:'), nl, 
+			write('    1 - Gravidez'), nl,
+			write('    2 - Alergias'), nl, 
+			write('    3 - Nenhuma'),nl,
+			write('  '),nl,nl,			
+			read(A6),
+			(
+				(A6 == 1), assert(variavel(gravidez)), resultado;
+				(A6 == 2), assert(fact(alergias)), resultado;
+				(A6 == 3), assert(fact(normal)), resultado).			
 			
 resultado :- 	write('\e[H\e[2J'),
 				write('                                                                                                        '), nl,
@@ -103,9 +103,9 @@ resultado :- 	write('\e[H\e[2J'),
 				write('                                           Diagnostico                                             '), nl, 
 				result.
 
-resultadowrite(P):-	%variavel(A6),nl,
+resultadowrite(P):-	variavel(A6),nl,
 					write('     O seu perfil e o: '),write(P),write('    '),nl,nl,
-					write('     O paciente encontra se com: '),perfil(P),nl,nl,
+					write('     O paciente encontra se com: '),perfil(P, A6),nl,nl,
 					write('                                                                                                        '),
-					%retract(variavel(A6)), 
+					retract(variavel(A6)), 
 					retractall(fact(_)).

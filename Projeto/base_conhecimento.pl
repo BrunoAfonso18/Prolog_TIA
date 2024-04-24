@@ -137,22 +137,15 @@ membro( X, [_|R] ) :- membro( X, R ).
 
 
 %lista todas as comidas
-%lista_doencas:-findall([Diagnostico],(doenca(_,_,_,_,_,Diagnostico,_)),Lista_doencas), print(Lista_doencas).
+lista_doencas:-findall([Diagnostico],
+    (doenca(_,_,_,_,_,Diagnostico,_)),Lista_doencas), 
+    print(Lista_doencas).
 
-%verdiagnostico(Rc,Temp,Inch,Tosse,Disp):- findall([Rc,Temp,Inch,Tosse,Disp],(doenca(Rc,Temp,Inch,Tosse,Disp,_,_)),Lista_doencas), print(Lista_doencas).
+verdiagnostico(Rc,Temp,Inch,Tosse,Disp,Tratamento):- findall([Rc,Temp,Inch,Tosse,Disp],
+    (doenca(Rc,Temp,Inch,Tosse,Disp,_,_)),Lista_doencas), 
+    print(Lista_doencas).
 
-%lista_doencas :-
-%   findall(Diagnostico, doenca(_, _, _, _, _, Diagnostico, _), Lista_doencas),
-%    print(Lista_doencas).
-
-%verdiagnostico(Rc, Temp, Inch, Tosse, Disp) :-
-%    findall(Diagnostico, doenca(Rc, Temp, Inch, Tosse, Disp, Diagnostico, _), Lista_doencas),
-%    print(Lista_doencas).
-
-%verdiagnostico(Rc, Temp, Inch, Tosse, Disp) :-
-%    doenca(Rc, Temp, Inch, Tosse, Disp, Diagnostico, _),
-%    writeln(Diagnostico).
-
+%usado na main
 verdiagnostico(Rc, Temp, Ig, Tt, D) :-
-    doenca(Rc, Temp, Ig, Tt, D, Diagnostico, _),
-    writeln(Diagnostico).
+    doenca(Rc, Temp, Ig, Tt, D, Diagnostico, Tratamento),
+    writeln(Diagnostico, Tratamento).
