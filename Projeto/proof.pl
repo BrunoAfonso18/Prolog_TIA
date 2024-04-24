@@ -5,7 +5,7 @@
 :- op( 500, xfy, and).
 :- op( 800, xfx, <=).
 result( P, P)  :-
-   fact( P).
+   fact(P).
 result( P, P <= CondProof)  :-
    if Cond then P,
    result( Cond, CondProof).

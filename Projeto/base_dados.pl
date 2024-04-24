@@ -16,7 +16,7 @@
 
 % TRATAMENTOS
 % -n paciente normal
-% -g gravidas
+% -g gravidezs
 % -a alergias
 
  
@@ -87,24 +87,24 @@ doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, 'Sem doencas pulmonares, 
 
 tratamentos('Amoxicilina-clavulanato', normal).
 tratamentos('Clindamicina', alergias).
-tratamentos('Amoxicilina', gravida).
-tratamentos('Paracetamol', gravida).
+tratamentos('Amoxicilina', gravidez).
+tratamentos('Paracetamol', gravidez).
 tratamentos('Ibuprofeno', normal).
 tratamentos('Aspirina', alergias).
 tratamentos('Esomeprazol', normal).
-tratamentos('Mupirocina', gravida).
+tratamentos('Mupirocina', gravidez).
 tratamentos('Hidratar', alergias).
 tratamentos('Azitromicina', normal).
 tratamentos('Descanso', alergias).
-tratamentos('Rifampicina', gravida).
+tratamentos('Rifampicina', gravidez).
 tratamentos('isoniazida', normal).
 tratamentos('Levofloxacino', normal).
-tratamentos('Ceftriaxona', gravida).
+tratamentos('Ceftriaxona', gravidez).
 tratamentos('Zanamivir', normal).
-tratamentos('Oseltamivir', gravida).
+tratamentos('Oseltamivir', gravidez).
 tratamentos('Oximetazolina', alergias).
 tratamentos('Nintedanibe', normal).
-tratamentos('Prednisona', gravida).
+tratamentos('Prednisona', gravidez).
 tratamentos('Albuterol', alergias).
 tratamentos('Oseltamivir', normal).
 tratamentos('Zanamivir', alergias).
@@ -112,35 +112,35 @@ tratamentos('Claritromicina', alergias).
 tratamentos('Paracetamol', normal).
 tratamentos('guaifenesina', alergias).
 tratamentos('Espironolactona', normal).
-tratamentos('Furosemida', gravida).
+tratamentos('Furosemida', gravidez).
 tratamentos('Enalapril', alergias).
-tratamentos('Eritromicina', gravida).
+tratamentos('Eritromicina', gravidez).
 tratamentos('Paracetamol', alergias).
 tratamentos('Codeina', normal).
 tratamentos('Dextrometorfano', alergias).
 tratamentos('Azitromicina', alergias).
 tratamentos('Pirazinamida', alergias).
 tratamentos('Heparina', normal).
-tratamentos('Varfarina', gravida).
+tratamentos('Varfarina', gravidez).
 tratamentos('Apixabana', alergias).
 tratamentos('Albuterol', normal).
-tratamentos('Ipratropio', gravida).
+tratamentos('Ipratropio', gravidez).
 tratamentos('Teofilina', alergias).
-tratamentos('Zanamivir', gravida).
+tratamentos('Zanamivir', gravidez).
 tratamentos('Tiotropio', normal).
-tratamentos('Salmeterol', gravida).
+tratamentos('Salmeterol', gravidez).
 tratamentos('Montelucaste', alergias).
 tratamentos('Omeprazol', normal).
-tratamentos('Ranitidina', gravida).
+tratamentos('Ranitidina', gravidez).
 tratamentos('Dompredona', alergias).
 tratamentos('Dornase', normal).
-tratamentos('Hipertonico', gravida).
+tratamentos('Hipertonico', gravidez).
 tratamentos('Ivacaftor', alergias).
 tratamentos('Amoxicilina', normal).
-tratamentos('Azitromicina', gravida).
+tratamentos('Azitromicina', gravidez).
 tratamentos('Ceftriaxona', alergias).
-tratamentos('Bumetanida', gravida).
-tratamentos('Torasemida', gravida).
-tratamentos('Salmeterol', gravida).
-tratamentos('Salmeterol', gravida).
-tratamentos('Salmeterol', gravida).
+tratamentos('Bumetanida', gravidez).
+tratamentos('Torasemida', gravidez).
+tratamentos('Salmeterol', gravidez).
+tratamentos('Salmeterol', gravidez).
+tratamentos('Salmeterol', gravidez).
