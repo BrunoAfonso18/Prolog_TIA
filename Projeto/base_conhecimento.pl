@@ -135,14 +135,7 @@ perfil(64, Z):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, Z
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
 
-verdiagnostico(Ritmo_card,Temp,Inchaco,Tosse,Dispneia) :-
-    findall(Medicamento, sintoma(doenca, Medicamento, _, _, _), Medicamentos).
-
 %lista todas as comidas
-lista_comidas:-findall([Tipo,Nome,Preco,Loja],(comida(Tipo,Nome,_,_,_,Preco,Loja,_)),Lista_comidas), print(Lista_comidas).
+lista_doencas:-findall([Diagnostico],(doenca(_,_,_,_,_,Diagnostico,_)),Lista_doencas), print(Lista_doencas).
 
-%procura por ingrediente
-procuraingrediente(Ingrediente):- findall([Tipo,Nome,Preco,Loja],(comida(Tipo,Nome,_,_,_,Preco,Loja,Ingredientes), membro(Ingrediente,Ingredientes)),Lista_comidas), print(Lista_comidas).
-
-%procura por comida
-procuracomida(Tipo,Vegetariana_SN,Preco_max):- findall([Tipo,Nome,Preco,Loja],(comida(Tipo,Nome,_,Vegetariana_SN,_,Preco,Loja,_), Preco<Preco_max),Lista_comidas), print(Lista_comidas).
+verdiagnostico(Rc,Temp,Inch,Tosse,Disp):- findall([Rc,Temp,Inch,Tosse,Disp],(doenca(Rc,Temp,Inch,Tosse,Disp,_,_)),Lista_doencas), print(Lista_doencas).

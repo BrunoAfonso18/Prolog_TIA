@@ -10,7 +10,7 @@ result:- new_derived_fact(P),
    resultadowrite(P), nl,
    assert(fact(P)),
    result.                           
-result:- nl,write( 'Esperemos que goste da recomendacao, Bom Apetie...').          
+result:- nl,write( 'Esperemos que goste da recomendacao, Fique Bem').          
 
 new_derived_fact( Concl)  :-
    if Cond then Concl,
