@@ -1,5 +1,5 @@
 :-dynamic(fact/1),
-[forward, base_dados, proof].
+[forward, base_dados, proof, base_conhecimento].
 
 menu:- nl,nl , 	write('\e[H\e[2J'),
 				write('                                                                                                        '), nl,
@@ -82,7 +82,20 @@ questao5:-	write('\e[H\e[2J'),
 			(
 			(A5 == 1),assert(fact(di_sim)), resultado;
             (A5 == 2),assert(fact(di_nao)), resultado).
-			
+
+%questao6:- 	write('\e[H\e[2J'),
+%			write('                                                                                                        '), nl,
+%			write('                                                                                                        '), nl,
+%			write('    Indique que condicao podera ter que podera impedir o tratamento:'), nl, 
+%			write('    1 - Gravidez'), nl,
+%			write('    2 - Alergias'), nl, 
+%			write('    3 - Nenhuma'),nl,
+%			write('  '),nl,nl,			
+%			read(A6),
+%			(
+%				(A6 == 1), assert(variavel(gravidez)), resultado;
+%				(A6 == 2), assert(fact(alergias)), resultado;
+%				(A6 == 3), assert(fact(normal)), resultado).			
 			
 resultado :- 	write('\e[H\e[2J'),
 				write('                                                                                                        '), nl,
@@ -90,8 +103,9 @@ resultado :- 	write('\e[H\e[2J'),
 				write('                                           Diagnostico                                             '), nl, 
 				result.
 
-resultadowrite(P):-	variavel(A6),nl,
+resultadowrite(P):-	%variavel(A6),nl,
 					write('     O seu perfil e o: '),write(P),write('    '),nl,nl,
-					write('     O paciente encontra se com: '),perfil(P,A6),nl,nl,
+					%write('     O paciente encontra se com: '),perfil(P,A6),nl,nl,
 					write('                                                                                                        '),
-					retract(variavel(A6)), retractall(fact(_)).
+					%retract(variavel(A6)), 
+					retractall(fact(_)).
