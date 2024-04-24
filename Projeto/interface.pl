@@ -21,7 +21,7 @@ menu:- nl,nl , 	write('\e[H\e[2J'),
 				write('                                                                                                        '), nl,
 				read(A1),
 			(
-			(A1 == 1),assert(fact(rc_alto)), questao2;
+			(A1 == 1),assert(fact(rc_alt)), questao2;
             (A1 == 2),assert(fact(rc_normal)), questao2).
 
 questao2:-	write('\e[H\e[2J'),
@@ -80,8 +80,8 @@ questao5:-	write('\e[H\e[2J'),
 			write('                                                                                                        '), nl,
 			read(A5),
 			(
-			(A5 == 1),assert(fact(di_sim)), resultado;
-            (A5 == 2),assert(fact(di_nao)), resultado).
+			(A5 == 1),assert(fact(d_sim)), resultado;
+            (A5 == 2),assert(fact(d_nao)), resultado).
 
 %questao6:- 	write('\e[H\e[2J'),
 %			write('                                                                                                        '), nl,
@@ -105,7 +105,7 @@ resultado :- 	write('\e[H\e[2J'),
 
 resultadowrite(P):-	%variavel(A6),nl,
 					write('     O seu perfil e o: '),write(P),write('    '),nl,nl,
-					%write('     O paciente encontra se com: '),perfil(P,A6),nl,nl,
+					write('     O paciente encontra se com: '),perfil(P),nl,nl,
 					write('                                                                                                        '),
 					%retract(variavel(A6)), 
 					retractall(fact(_)).
