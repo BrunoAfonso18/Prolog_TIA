@@ -24,18 +24,18 @@ doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_sim, 'Infecao respiratoria grave', 
 doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_nao, 'Gripe viral',['Ibuprofeno','Paracetamol','Aspirina']).
 doenca(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_sim, 'Pneumotorax',['Consultar medico']).
 doenca(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_nao, 'Infecao bacteriana',['Esomeprazol','Mupirocina','Hidratar']).
-doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_sim, 'Pneumonia bacteriana com hemoptise',['Azitromicina-n','Amoxicilina','Descanso']).
+doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_sim, 'Pneumonia bacteriana com hemoptise',['Azitromicina','Amoxicilina','Descanso']).
 doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_nao, 'Tuberculose pulmonar avancada',['Isoniazida','Rifampicina','Consultar medico']).
 doenca(rc_alt, temp_alta, ig_sim, tt_nulo, d_sim, 'Pneumonia bacteriana grave',['Levofloxacino','Ceftriaxona','Descanso']).
 doenca(rc_alt, temp_alta, ig_sim, tt_nulo, d_nao, 'Infecao respiratoria viral',['Zanamivir','Oseltamivir','Oximetazolina']).
 doenca(rc_alt, temp_alta, ig_nao, tt_seca, d_sim, 'Doenca pulmonar intersticial',['Nintedanibe','Prednisona',' Albuterol']).
 doenca(rc_alt, temp_alta, ig_nao, tt_seca, d_nao, 'Gripe grave',['Oseltamivir','Oseltamivir','Zanamivir']).
-doenca(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_sim, 'Bronquite bacteriana',['Azitromicina-n','Amoxicilina','Claritromicina']).
+doenca(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_sim, 'Bronquite bacteriana',['Azitromicina','Amoxicilina','Claritromicina']).
 doenca(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_nao, 'Pneumonia viral leve',['Paracetamol','Paracetamol','guaifenesina']).
 doenca(rc_alt, temp_alta, ig_nao, tt_sangue, d_sim, 'Pneumonia com hemoptise',['Paracetamol','Paracetamol','Guaifenesina']).
 doenca(rc_alt, temp_alta, ig_nao, tt_sangue, d_nao, 'Bronquite cronica com hemoptise',['Levofloxacino','Amoxicilina','Consultar medico']).
 doenca(rc_alt, temp_alta, ig_nao, tt_nulo, d_sim, 'Insuficiência cardíaca aguda',['Espironolactona','Furosemida','Enalapril']).
-doenca(rc_alt, temp_alta, ig_nao, tt_nulo, d_nao, 'Pneumonia bacteriana atípica',['Azitromicina-n','Eritromicina','Paracetamol']).
+doenca(rc_alt, temp_alta, ig_nao, tt_nulo, d_nao, 'Pneumonia bacteriana atípica',['Azitromicina','Eritromicina','Paracetamol']).
 doenca(rc_alt, temp_normal, ig_sim, tt_seca, d_sim, 'Asma aguda',['Terbutalina','Salbutamol','Prednisona']).
 doenca(rc_alt, temp_normal, ig_sim, tt_seca, d_nao, 'Condicao pulmonar aguda',['Codeina','Paracetamol','Dextrometorfano']).
 doenca(rc_alt, temp_normal, ig_sim, tt_espeturacao, d_sim, 'Infecao pulmonar bacteriana',['Levofloxacino', 'Amoxicilina', 'Azitromicina']).
@@ -47,8 +47,8 @@ doenca(rc_alt, temp_normal, ig_sim, tt_nulo, d_nao, 'Infecao viral leve',['Oselt
 doenca(rc_alt, temp_normal, ig_nao, tt_seca, d_sim, 'Doenca pulmonar obstrutiva cronica',['Tiotropio', 'Salmeterol', 'Montelucaste']).
 doenca(rc_alt, temp_normal, ig_nao, tt_seca, d_nao, 'Refluxo gastroesofagico',['Omeprazol', 'Ranitidina', 'Dompredona']).
 doenca(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_sim, 'Fibrose cística',['Dornase', 'Hipertonico', 'Ivacaftor']).
-doenca(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_nao, 'Bronquite aguda',['Amoxicilina', 'Azitromicina-g', 'Ceftriaxona']).
-doenca(rc_alt, temp_normal, ig_nao, tt_sangue, d_sim, 'Bronquiectasia',['Azitromicina-n', 'Tobramicina', 'Ciprofloxacino']).
+doenca(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_nao, 'Bronquite aguda',['Amoxicilina', 'Azitromicina', 'Ceftriaxona']).
+doenca(rc_alt, temp_normal, ig_nao, tt_sangue, d_sim, 'Bronquiectasia',['Azitromicina', 'Tobramicina', 'Ciprofloxacino']).
 doenca(rc_alt, temp_normal, ig_nao, tt_sangue, d_nao, 'Aspergilose broncopulmonar alérgica',['Itraconazol', 'Voriconazol', 'Posaconazol']).
 doenca(rc_alt, temp_normal, ig_nao, tt_nulo, d_sim, 'Insuficiência cardíaca congestiva',['Furosemida', 'Espironolactona', 'Enalapril']).
 doenca(rc_alt, temp_normal, ig_nao, tt_nulo, d_nao, 'Taquicardia',['Propranolol', 'Atenolol', 'Verapamil']).
@@ -57,7 +57,7 @@ doenca(rc_normal, temp_alta, ig_sim, tt_seca, d_nao, 'Rinite alérgica',['Deslor
 doenca(rc_normal, temp_alta, ig_sim, tt_espeturacao, d_sim, 'Abcesso pulmonar',['Amoxicilina', 'Clavulanato', 'Ceftriaxona']).
 doenca(rc_normal, temp_alta, ig_sim, tt_espeturacao, d_nao, 'Faringite bacteriana',['Amoxicilina', 'Clavulanato', 'Azitromicina']).
 doenca(rc_normal, temp_alta, ig_sim, tt_sangue, d_sim, 'Tuberculose',['Isoniazida', 'Rifampicina', 'Pirazinamida']).
-doenca(rc_normal, temp_alta, ig_sim, tt_sangue, d_nao, 'Traqueobronquite',['Azitromicina-n', 'Clindamicina', 'Ceftriaxona']).
+doenca(rc_normal, temp_alta, ig_sim, tt_sangue, d_nao, 'Traqueobronquite',['Azitromicina', 'Clindamicina', 'Ceftriaxona']).
 doenca(rc_normal, temp_alta, ig_sim, tt_nulo, d_sim, 'Edema pulmonar',['Furosemida', 'Bumetanida', 'Torasemida']).
 doenca(rc_normal, temp_alta, ig_sim, tt_nulo, d_nao, 'Amigdalite cronica',['Amoxicilina', 'Clavulanato', 'Azitromicina']).
 doenca(rc_normal, temp_alta, ig_nao, tt_seca, d_sim, 'Fibrose pulmonar',['N-acetilcisteina', 'Pirfenidona', 'Nintedanibe']).
@@ -87,14 +87,16 @@ doenca(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, 'Sem doencas pulmonares, 
 
 tratamentos('Amoxicilina-clavulanato', normal).
 tratamentos('Clindamicina', alergias).
+tratamentos('Clindamicina', gravidez).
 tratamentos('Amoxicilina', gravidez).
 tratamentos('Paracetamol', gravidez).
 tratamentos('Ibuprofeno', normal).
+tratamentos('Ibuprofeno', gravidez).
 tratamentos('Aspirina', alergias).
 tratamentos('Esomeprazol', normal).
 tratamentos('Mupirocina', gravidez).
 tratamentos('Hidratar', alergias).
-tratamentos('Azitromicina-n', normal).
+tratamentos('Azitromicina', normal).
 tratamentos('Descanso', alergias).
 tratamentos('Rifampicina', gravidez).
 tratamentos('Isoniazida', normal).
@@ -113,7 +115,9 @@ tratamentos('Claritromicina', alergias).
 tratamentos('Paracetamol', normal).
 tratamentos('guaifenesina', alergias).
 tratamentos('Espironolactona', normal).
+tratamentos('Espironolactona', gravidez).
 tratamentos('Furosemida', gravidez).
+tratamentos('Furosemida', normal).
 tratamentos('Enalapril', alergias).
 tratamentos('Eritromicina', gravidez).
 tratamentos('Paracetamol', alergias).
@@ -138,9 +142,14 @@ tratamentos('Dornase', normal).
 tratamentos('Hipertonico', gravidez).
 tratamentos('Ivacaftor', alergias).
 tratamentos('Amoxicilina', normal).
-tratamentos('Azitromicina-g', gravidez).
+tratamentos('Azitromicina', gravidez).
 tratamentos('Ceftriaxona', alergias).
-tratamentos('Bumetanida', gravida).
-tratamentos('Torasemida', gravida).
+tratamentos('Bumetanida', gravidez).
+tratamentos('Torasemida', alergias).
 tratamentos('N-acetilcisteina', normal).
+tratamentos('Clavulanato', gravidez).
+tratamentos('Oxicodona', gravidez).
+tratamentos('Dipirona', alergias).
+tratamentos('Beclometasona', gravidez).
+tratamentos('Pirfenidona', gravidez).
 
