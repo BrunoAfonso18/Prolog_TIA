@@ -20,12 +20,12 @@
 % -a alergias
 
  
-doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_sim, 'Infecao respiratoria grave', ['Amoxicilina-g', 'Clindamicina-a', 'Amoxicilina-clavulanato-n']).
-doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_nao, 'Gripe viral',['Paracetamol-g','Ibuprofeno-n','Aspirina-a']).
+doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_sim, 'Infecao respiratoria grave', ['Amoxicilina-clavulanato-n','Amoxicilina-g', 'Clindamicina-a']).
+doenca(rc_alt, temp_alta, ig_sim, tt_seca, d_nao, 'Gripe viral',['Ibuprofeno-n','Paracetamol-g','Aspirina-a']).
 doenca(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_sim, 'Pneumotorax',['Consultar medico']).
 doenca(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_nao, 'Infecao bacteriana',['Esomeprazol-n','Mupirocina-g','Hidratar-a']).
-doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_sim, 'Pneumonia bacteriana com hemoptise',['Amoxicilina-g','Azitromicina-n','Descanso-a']).
-doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_nao, 'Tuberculose pulmonar avancada',['Rifampicina-g','isoniazida-n','Consultar medico-a']).
+doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_sim, 'Pneumonia bacteriana com hemoptise',['Azitromicina-n','Amoxicilina-g','Descanso-a']).
+doenca(rc_alt, temp_alta, ig_sim, tt_sangue, d_nao, 'Tuberculose pulmonar avancada',['Isoniazida-n','Rifampicina-g','Consultar medico-a']).
 doenca(rc_alt, temp_alta, ig_sim, tt_nulo, d_sim, 'Pneumonia bacteriana grave',['Levofloxacino-n','Ceftriaxona-g','Descanso-a']).
 doenca(rc_alt, temp_alta, ig_sim, tt_nulo, d_nao, 'Infecao respiratoria viral',['Zanamivir-n','Oseltamivir-g','Oximetazolina-a']).
 doenca(rc_alt, temp_alta, ig_nao, tt_seca, d_sim, 'Doenca pulmonar intersticial',['Nintedanibe-n','Prednisona-g',' Albuterol-a']).

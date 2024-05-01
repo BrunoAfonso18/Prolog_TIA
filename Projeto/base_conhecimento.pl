@@ -149,7 +149,7 @@ verdiagnostico(Rc,Temp,Inch,Tosse,Disp,Tratamento):- findall([Rc,Temp,Inch,Tosse
     (doenca(Rc,Temp,Inch,Tosse,Disp,_,_)),Lista_doencas), 
     print(Lista_doencas, Lista_trataemntos).
 
-%usado na main
-%verdiagnostico(Rc, Temp, Ig, Tt, D) :-
-%    doenca(Rc, Temp, Ig, Tt, D, Diagnostico, Tratamento),
-%    writeln(Diagnostico, Tratamento).
+
+verdiagnostico(Rc, Temp, Ig, Tt, D) :-
+    doenca(Rc, Temp, Ig, Tt, D, Diagnostico, Tratamento),
+    writeln(Diagnostico, Tratamento).
