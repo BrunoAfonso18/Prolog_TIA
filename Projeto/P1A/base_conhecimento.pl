@@ -136,9 +136,6 @@ membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
 
 
-%lista todas as comidas
-%lista_doencas:-findall([Diagnostico],(doenca(_,_,_,_,_,Diagnostico,_)),Lista_doencas), print(Lista_doencas).
-
 %verdiagnostico(Rc,Temp,Inch,Tosse,Disp):- findall([Rc,Temp,Inch,Tosse,Disp],(doenca(Rc,Temp,Inch,Tosse,Disp,_,_)),Lista_doencas), print(Lista_doencas).
 
 %lista_doencas :-
@@ -153,6 +150,9 @@ membro( X, [_|R] ) :- membro( X, R ).
 %    doenca(Rc, Temp, Inch, Tosse, Disp, Diagnostico, _),
 %    writeln(Diagnostico).
 
+
+
 verdiagnostico(Rc, Temp, Ig, Tt, D) :-
-    doenca(Rc, Temp, Ig, Tt, D, Diagnostico, _),
-    writeln(Diagnostico).
+    doenca(Rc, Temp, Ig, Tt, D, Diagnostico, X),
+    writeln(Diagnostico),
+    writeln(X).
