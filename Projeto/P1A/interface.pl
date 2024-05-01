@@ -80,9 +80,28 @@ questao5:-	write('\e[H\e[2J'),
 			write('                                                                                                        '), nl,
 			read(A5),
 			(
+<<<<<<< HEAD:Projeto/P1A/interface.pl
 			(A5 == 1),assert(fact(d_sim)), resultado;
             (A5 == 2),assert(fact(d_nao)), resultado).
 		
+=======
+			(A5 == 1),assert(fact(d_sim)), questao6;
+            (A5 == 2),assert(fact(d_nao)), questao6).
+
+questao6:- 	write('\e[H\e[2J'),
+			write('                                                                                                        '), nl,
+			write('                                                                                                        '), nl,
+			write('    Indique que condicao podera ter que podera impedir o tratamento:'), nl, 
+			write('    1 - Gravidez'), nl,
+			write('    2 - Alergias'), nl, 
+			write('    3 - Nenhuma'),nl,
+			write('  '),nl,nl,			
+			read(A6),
+			(
+				(A6 == 1), assert(variavel(gravidez)), resultado;
+				(A6 == 2), assert(variavel(alergias)), resultado;
+				(A6 == 3), assert(variavel(normal)), resultado).			
+>>>>>>> tratamentos:Projeto/interface.pl
 			
 resultado :- 	write('\e[H\e[2J'),
 				write('                                                                                                        '), nl,
@@ -90,7 +109,15 @@ resultado :- 	write('\e[H\e[2J'),
 				write('                                           Diagnostico                                             '), nl, 
 				result.
 
+<<<<<<< HEAD:Projeto/P1A/interface.pl
 resultadowrite(P):-	write('     O seu perfil e o: '),write(P),write('    '),nl,nl,
 					write('     O paciente encontra se com: '),perfil(P),nl,nl,
 					write('                                                                                                        '),
+=======
+resultadowrite(P):-	variavel(A6),nl,
+					write('     O seu perfil e o: '),write(P),write('    '),nl,nl,
+					write('     O paciente encontra se com: '),perfil(P, A6),nl,nl,
+					write('                                                                                                        '),
+					retract(variavel(A6)), 
+>>>>>>> tratamentos:Projeto/interface.pl
 					retractall(fact(_)).
