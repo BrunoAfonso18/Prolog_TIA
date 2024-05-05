@@ -152,4 +152,6 @@ tratamentos('Oxicodona', gravidez).
 tratamentos('Dipirona', alergias).
 tratamentos('Beclometasona', gravidez).
 tratamentos('Pirfenidona', gravidez).
-
+tratamentos('Consultar medico', gravidez).
+tratamentos('Consultar medico', normal).
+tratamentos('Consultar medico', alergias).
