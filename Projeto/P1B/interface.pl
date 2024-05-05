@@ -10,11 +10,7 @@ learn_rules:-
 	told.
 
 % example of classifying
-q1(Class):- classify([idade=idade18a25,area=preco,tipo=carne,preco=preco5a7],Class), write(classify([idade=idade18a25,area=preco,tipo=carne,preco=preco5a7],Class)).
-q2(Class):- classify([idade=idade18a25,area=variedade,tipo=carne,preco=preco7a10],Class).
-q3(Class):- classify([tipo=francesinha, preco=preco5a7],Class).
-q7(Class):- classify([tipo=hamburguer, area=variedade, preco=preco5a7],Class).
-q5(Class):- classify([idade=idademaior55,area=comida,tipo=peixe,preco=preco15a20], Class).
+q1(Class):- classify([idade=idade18a25,area=cidade,temp=temp_alta,tosse=tt_sangue],Class).
 
 q4(Class):- findall(A,fact(A),Z), classify(Z,Class), retractall(fact(_)).
 
