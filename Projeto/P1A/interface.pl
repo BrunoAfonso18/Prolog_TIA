@@ -65,7 +65,7 @@ questao4:-	write('\e[H\e[2J'),
 			read(A4),
 			(
 			(A4 == 1), assert(fact(tt_seca)), questao5;
-            (A4 == 2), assert(fact(tt_espeturacao)), questao5;
+            (A4 == 2), assert(fact(tt_expetoracao)), questao5;
             (A4 == 3), assert(fact(tt_sangue)), questao5;
             (A4 == 4), assert(fact(tt_nulo)), questao5).
 			
