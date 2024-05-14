@@ -1,18 +1,18 @@
 :- dynamic comprimento/2 .
-:- dynamic ocupacao/2 .
+:- dynamic custo/2 .
 :- dynamic passageiroKM/2 .
 :-[base_dados].
 
-%OcupacaoCaminho
-ocupacaoAutocarro([],0).
-ocupacaoAutocarro([X|R],Soma) :- passageiros(X,TotalEstacao), 
-ocupacaoAutocarro(R,TotalAutocarro), Soma is TotalEstacao + TotalAutocarro.
+%Custo Tratamento
+custoTratamento([],0).
+custoTratamento([X|R],Soma) :- custos(X,TotalTratamento), 
+custoTratamento(R,TotalMedicamento), Soma is TotalTratamento + TotalMedicamento.
 
-guardarOcupacaoAutocarro(Caminho):- ocupacaoAutocarro(Caminho, Valor), 
-assertz(ocupacao(Caminho, Valor)).
+guardarCustoTratamento(Tratamento):- custoTratamento(Tratamento, Valor), 
+assertz(custo(Tratamento, Valor)).
 
-gerarOcupacoesCaminhos([]).
-gerarOcupacoesCaminhos([C1|R1]):- guardarOcupacaoAutocarro(C1), gerarOcupacoesCaminhos(R1).
+gerarCustosTratamentos([]).
+gerarCustosTratamentos([C1|R1]):- guardarCustoTratamento(C1), gerarCustosTratamentos(R1).
 
 %DistanciaCaminho
 calcularDistancia(_,[],0).
