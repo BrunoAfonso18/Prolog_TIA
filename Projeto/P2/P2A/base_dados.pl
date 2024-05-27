@@ -51,68 +51,47 @@ tempo(paracetamol,antibiotico,8).
 tempo(aspirina,antibiotica,8).
 tempo(anti_histaminico,antibiotico,8).
 tempo(antibiotico,destino,0).
+tempo(aspirina,dieta,30).
+tempo(desporto,dieta,30).
+tempo(dieta,destino,0).
+tempo(brufen,ginastica,15).
+tempo(fisioterapia,ginastica,15).
+tempo(anti_histaminico,internamento,3).
+tempo(cirurgia,internamento,3).
+tempo(antibiotico,internamento,3).
+tempo(internamento,destino,0).
+tempo(insulina,dialise,10).
+tempo(dialise,destino,0).
+tempo(fisioterapia,calmante,90).
+tempo(cine_terapia,calmante,90).
+tempo(desporto,calmante,90).
+tempo(fisioterapia,injecoes,3).
+tempo(insulina,injecoes,3).
+tempo(injecoes,inalo_terapia,6).
+tempo(inalo_terapia,destino,0).
+tempo(aspirina,soro,8).
+tempo(cirurgia,soro,8).
+tempo(inalacoes,soro,8).
+
+tempo(paracetamol,oculos,1000).
+tempo(brufen,oculos,1000).
+tempo(aspirina,oculos,1000).
+tempo(descanso,oculos,1000).
+tempo(oculos,destino,0).
+tempo(paracetamol,lentes,200).
+tempo(brufen,lentes,200).
+tempo(aspirina,lentes,200).
+tempo(descanso,lentes,200).
+tempo(lentes,destino,0).
+tempo(descanso,ambulatorio,20).
+tempo(ginastica,ambulatorio,20).
+tempo(fisioterapia,ambulatorio,20).
+tempo(calmante,ambulatorio,20).
+tempo(injecoes,ambulatorio,20).
+tempo(soro,ambulatorio,20).
+tempo(ambulatorio,destino,0).
 
 
-
-
-tempo(origem, fisioterapia, 6).
-tempo(origem, cine_terapia, 8).
-tempo(origem, desporto, 12).
-
-
-tempo(paracetamol, antibiotico, 8).
-tempo(paracetamol, descanso, 2).
-tempo(paracetamol, destino, 6).
-
-tempo(brufen, cine_terapia, 8).
-tempo(brufen, ginastica, 15).
-tempo(brufen, descanso, 2).
-tempo(brufen, destino, 6).
-tempo(aspirina, insulina, 30).
-tempo(aspirina, injeções, 3).
-tempo(aspirina, inalações, 10).
-tempo(aspirina, antibiotico, 8).
-tempo(aspirina, destino, 30).
-tempo(anti_histaminico, antibiotico, 8).
-tempo(anti_histaminico, destino, 3).
-
-tempo(descanso, antibiotico, 8).
-tempo(descanso, oculos, 1000).
-tempo(descanso, lentes_de_contacto, 200).
-tempo(descanso, ambulatorio, 20).
-tempo(descanso, destino, 20).
-tempo(fisioterapia, cirurgia, 3).
-tempo(fisioterapia, calmante, 90).
-tempo(fisioterapia, ginastica, 15).
-tempo(fisioterapia, injeções, 3).
-tempo(fisioterapia, soro, 20).
-
-tempo(cine_terapia, calmante, 90).
-
-tempo(desporto, calmante, 90).
-tempo(desporto, destino, 20).
-tempo(cirurgia, internamento, 3).
-tempo(cirurgia, soro, 20).
-tempo(cirurgia, destino, 20).
-tempo(inalações, soro, 20).
-tempo(insulina, antibiotico, 8).
-tempo(insulina, injeções, 3).
-tempo(insulina, dialise, 10).
-tempo(insulina, soro, 20).
-tempo(insulina, destino, 20).
-tempo(antibiotico, internamento, 3).
-tempo(antibiotico, destino, 3).
-tempo(ginastica, ambulatorio, 20).
-tempo(ginastica, destino, 20).
-tempo(dieta, soro, 20).
-tempo(dieta, destino, 20).
-tempo(calmante, ambulatorio, 20).
-tempo(calmante, destino, 20).
-tempo(injeções, inalo_terapia, 6).
-tempo(injeções, ambulatorio, 20).
-tempo(injeções, destino, 6).
-tempo(soro, ambulatorio, 20).
-tempo(soro, destino, 20).
 
 % Correspondências para facilitar a leitura e consulta
 medicamento(1, origem).
