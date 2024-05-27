@@ -24,11 +24,6 @@ custos(lentes, 300).
 custos(ambulatorio, 800).
 
 
-
-
-
-
-
 % tempo(Origem, Destino, Tempo)
 tempo(origem, paracetamol, 2).
 tempo(origem, brufen, 3).
@@ -72,7 +67,6 @@ tempo(inalo_terapia,destino,0).
 tempo(aspirina,soro,8).
 tempo(cirurgia,soro,8).
 tempo(inalacoes,soro,8).
-
 tempo(paracetamol,oculos,1000).
 tempo(brufen,oculos,1000).
 tempo(aspirina,oculos,1000).
@@ -154,7 +148,6 @@ arco(soro,ambulatorio).
 arco(ambulatorio,destino).
 
 
-
 % Correspondências para facilitar a leitura e consulta
 medicamento(1, origem).
 medicamento(2, paracetamol).
@@ -175,20 +168,3 @@ medicamento(17, calmante).
 medicamento(18, injeções).
 medicamento(20, soro).
 medicamento(0, destino).
-
-
-
-%arco(Origem, Destino)
-arco(braga, viana_castelo).
-arco(braga, esposende).
-arco(braga, povoa_varzim).
-arco(braga, aveiro).
-arco(braga, guimaraes).
-arco(viana_castelo, esposende).
-arco(viana_castelo, guimaraes).
-arco(esposende, povoa_varzim).
-arco(esposende, porto).
-arco(guimaraes, penafiel).
-arco(povoa_varzim, porto).
-arco(penafiel, porto).
-arco(aveiro, porto).
