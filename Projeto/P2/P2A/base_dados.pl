@@ -92,6 +92,68 @@ tempo(soro,ambulatorio,20).
 tempo(ambulatorio,destino,0).
 
 
+%Arco(origem,destino)
+arco(origem, paracetamol).
+arco(origem, brufen).
+arco(origem, aspirina).
+arco(origem, anti_histaminico).
+arco(origem, descanso).
+arco(paracetamol, descanso).
+arco(brufen, descanso).
+arco(paracetamol, fisioterapia).
+arco(brufen, fisioterapia).
+arco(fisioterapia, destino).
+arco(paracetamol, cine_terapia).
+arco(descanso, cine_terapia).
+arco(cine_terapia, destino).
+arco(brufen,desporto).
+arco(fisioterapia,cirugia).
+arco(aspirina,inalacoes).
+arco(aspirina,insulina).
+arco(paracetamol,antibiotico).
+arco(aspirina,antibiotica).
+arco(anti_histaminico,antibiotico).
+arco(antibiotico,destino).
+arco(aspirina,dieta).
+arco(desporto,dieta).
+arco(dieta,destino).
+arco(brufen,ginastica).
+arco(fisioterapia,ginastica).
+arco(anti_histaminico,internamento).
+arco(cirurgia,internamento).
+arco(antibiotico,internamento).
+arco(internamento,destino).
+arco(insulina,dialise).
+arco(dialise,destino).
+arco(fisioterapia,calmante).
+arco(cine_terapia,calmante).
+arco(desporto,calmante).
+arco(fisioterapia,injecoes).
+arco(insulina,injecoes).
+arco(injecoes,inalo_terapia).
+arco(inalo_terapia,destino).
+arco(aspirina,soro).
+arco(cirurgia,soro).
+arco(inalacoes,soro).
+arco(paracetamol,oculos).
+arco(brufen,oculos).
+arco(aspirina,oculos).
+arco(descanso,oculos).
+arco(oculos,destino).
+arco(paracetamol,lentes).
+arco(brufen,lentes).
+arco(aspirina,lentes).
+arco(descanso,lentes).
+arco(lentes,destino).
+arco(descanso,ambulatorio).
+arco(ginastica,ambulatorio).
+arco(fisioterapia,ambulatorio).
+arco(calmante,ambulatorio).
+arco(injecoes,ambulatorio).
+arco(soro,ambulatorio).
+arco(ambulatorio,destino).
+
+
 
 % Correspondências para facilitar a leitura e consulta
 medicamento(1, origem).
