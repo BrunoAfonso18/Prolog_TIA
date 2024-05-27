@@ -24,21 +24,46 @@ custos(lentes_contacto, 300).
 custos(ambulatorio, 800).
 
 
+
+
+
+
+
 % tempo(Origem, Destino, Tempo)
 tempo(origem, paracetamol, 2).
 tempo(origem, brufen, 3).
 tempo(origem, aspirina, 4).
 tempo(origem, anti_histaminico, 5).
 tempo(origem, descanso, 2).
+tempo(paracetamol, descanso, 2).
+tempo(brufen, descanso, 2).
+tempo(paracetamol, fisioterapia, 6).
+tempo(brufen, fisioterapia, 6).
+tempo(fisioterapia, destino, 0).
+tempo(paracetamol, cine_terapia, 8).
+tempo(descanso, cine_terapia, 8).
+tempo(cine_terapia, destino, 0).
+tempo(brufen,desporto,12).
+tempo(fisioterapia,cirugia,3).
+tempo(aspirina,inalacoes,10).
+tempo(aspirina,insulina,30).
+tempo(paracetamol,antibiotico,8).
+tempo(aspirina,antibiotica,8).
+tempo(anti_histaminico,antibiotico,8).
+tempo(antibiotico,destino,0).
+
+
+
+
 tempo(origem, fisioterapia, 6).
 tempo(origem, cine_terapia, 8).
 tempo(origem, desporto, 12).
-tempo(paracetamol, fisioterapia, 6).
-tempo(paracetamol, cine_terapia, 8).
+
+
 tempo(paracetamol, antibiotico, 8).
 tempo(paracetamol, descanso, 2).
 tempo(paracetamol, destino, 6).
-tempo(brufen, fisioterapia, 6).
+
 tempo(brufen, cine_terapia, 8).
 tempo(brufen, ginastica, 15).
 tempo(brufen, descanso, 2).
@@ -50,7 +75,7 @@ tempo(aspirina, antibiotico, 8).
 tempo(aspirina, destino, 30).
 tempo(anti_histaminico, antibiotico, 8).
 tempo(anti_histaminico, destino, 3).
-tempo(descanso, cine_terapia, 8).
+
 tempo(descanso, antibiotico, 8).
 tempo(descanso, oculos, 1000).
 tempo(descanso, lentes_de_contacto, 200).
@@ -61,9 +86,9 @@ tempo(fisioterapia, calmante, 90).
 tempo(fisioterapia, ginastica, 15).
 tempo(fisioterapia, injeções, 3).
 tempo(fisioterapia, soro, 20).
-tempo(fisioterapia, destino, 20).
+
 tempo(cine_terapia, calmante, 90).
-tempo(cine_terapia, destino, 20).
+
 tempo(desporto, calmante, 90).
 tempo(desporto, destino, 20).
 tempo(cirurgia, internamento, 3).
