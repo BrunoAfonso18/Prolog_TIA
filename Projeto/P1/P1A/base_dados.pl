@@ -8,10 +8,6 @@
 % tipo_tosse (tt_seca, tt_expetoracao, tt_sangue, tt_nulo)
 % dispneia (d_sim, d_nao)
 
-%   Depois tens de ter factos so com os tratamentos com dados dos proprios 
-%   tratamentos como contra-indicacões, tipologia de doentes e outros que possam 
-%   ser úteis para adequar o melhor tratamento para a doenca/ pessoa.
-
 %   As doencas é que terao o nome do tratamento num Array. Depois a selecao do melhor tratamento e feito na base de conhecimento.
 
 % TRATAMENTOS

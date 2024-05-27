@@ -65,71 +65,6 @@ if rc_normal and temp_normal and ig_nao and tt_sangue and d_nao then 62.
 if rc_normal and temp_normal and ig_nao and tt_nulo and d_sim then 63.
 if rc_normal and temp_normal and ig_nao and tt_nulo and d_nao then 64.
 
-%perfil(1):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_seca, d_sim) .
-%perfil(2):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_seca, d_nao) .
-%perfil(3):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_sim) .
-%perfil(4):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_espeturacao, d_nao) .
-%perfil(5):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_sangue, d_sim) .
-%perfil(6):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_sangue, d_nao) .
-%perfil(7):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_nulo, d_sim) .
-%perfil(8):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_nulo, d_nao) .
-%perfil(9):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_seca, d_sim) .
-%perfil(10):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_seca, d_nao) .
-%perfil(11):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_sim) .
-%perfil(12):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_espeturacao, d_nao) .
-%perfil(13):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_sangue, d_sim) .
-%perfil(14):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_sangue, d_nao) .
-%perfil(15):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_nulo, d_sim) .
-%perfil(16):- verdiagnostico(rc_alt, temp_alta, ig_nao, tt_nulo, d_nao) .
-%perfil(17):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_seca, d_sim) .
-%perfil(18):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_seca, d_nao) .
-%perfil(19):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_espeturacao, d_sim) .
-%perfil(20):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_espeturacao, d_nao) .
-%perfil(21):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_sangue, d_sim) .
-%perfil(22):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_sangue, d_nao) .
-%perfil(23):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_nulo, d_sim) .
-%perfil(24):- verdiagnostico(rc_alt, temp_normal, ig_sim, tt_nulo, d_nao) .
-%perfil(25):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_seca, d_sim) .
-%perfil(26):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_seca, d_nao) .
-%perfil(27):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_sim) .
-%perfil(28):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_espeturacao, d_nao) .
-%perfil(29):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_sangue, d_sim) .
-%perfil(30):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_sangue, d_nao) .
-%perfil(31):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_nulo, d_sim) .
-%perfil(32):- verdiagnostico(rc_alt, temp_normal, ig_nao, tt_nulo, d_nao) .
-%perfil(33):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_seca, d_sim) .
-%perfil(34):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_seca, d_nao) .
-%perfil(35):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_espeturacao, d_sim) .
-%perfil(36):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_espeturacao, d_nao) .
-%perfil(37):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_sangue, d_sim) .
-%perfil(38):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_sangue, d_nao) .
-%perfil(39):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_nulo, d_sim) .
-%perfil(40):- verdiagnostico(rc_normal, temp_alta, ig_sim, tt_nulo, d_nao) .
-%perfil(41):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_seca, d_sim) .
-%perfil(42):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_seca, d_nao) .
-%perfil(43):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_sim) .
-%perfil(44):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_espeturacao, d_nao) .
-%perfil(45):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_sangue, d_sim) .
-%perfil(46):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_sangue, d_nao) .
-%perfil(47):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_nulo, d_sim) .
-%perfil(48):- verdiagnostico(rc_normal, temp_alta, ig_nao, tt_nulo, d_nao) .
-%perfil(49):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_seca, d_sim) .
-%perfil(50):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_seca, d_nao) .
-%perfil(51):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_sim) .
-%perfil(52):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_espeturacao, d_nao) .
-%perfil(53):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_sangue, d_sim) .
-%perfil(54):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_sangue, d_nao) .
-%perfil(55):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_nulo, d_sim) .
-%perfil(56):- verdiagnostico(rc_normal, temp_normal, ig_sim, tt_nulo, d_nao) .
-%perfil(57):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_seca, d_sim) .
-%perfil(58):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_seca, d_nao) .
-%perfil(59):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_sim) .
-%perfil(60):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_espeturacao, d_nao) .
-%perfil(61):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_sangue, d_sim) .
-%perfil(62):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_sangue, d_nao) .
-%perfil(63):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_nulo, d_sim) .
-%perfil(64):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao) .
-
 
 perfil(2, Z):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_seca, d_nao, Z).
 perfil(1, Z):- verdiagnostico(rc_alt, temp_alta, ig_sim, tt_seca, d_sim, Z).
@@ -200,9 +135,6 @@ perfil(64, Z):- verdiagnostico(rc_normal, temp_normal, ig_nao, tt_nulo, d_nao, Z
 membro( X, [X|_] ).
 membro( X, [_|R] ) :- membro( X, R ).
 
-
-%lista todas as comidas
-%lista_doencas:-findall([Diagnostico],(doenca(_,_,_,_,_,Diagnostico,_)),Lista_doencas), print(Lista_doencas).
 
 %verdiagnostico(Rc,Temp,Inch,Tosse,Disp):- findall([Rc,Temp,Inch,Tosse,Disp],(doenca(Rc,Temp,Inch,Tosse,Disp,_,_)),Lista_doencas), print(Lista_doencas).
 

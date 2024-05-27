@@ -20,7 +20,7 @@ custos(injecoes, 75).
 custos(inalo_terapia, 90).
 custos(soro, 15).
 custos(oculos, 500).
-custos(lentes_contacto, 300).
+custos(lentes, 300).
 custos(ambulatorio, 800).
 
 
