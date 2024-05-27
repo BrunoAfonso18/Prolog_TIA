@@ -14,6 +14,7 @@ assertz(custo(Tratamento, Valor)).
 gerarCustosTratamentos([]).
 gerarCustosTratamentos([C1|R1]):- guardarCustoTratamento(C1), gerarCustosTratamentos(R1).
 
+
 %DistanciaCaminho
 calcularDistancia(_,[],0).
 calcularDistancia(P1,[P2|R2], Soma):- percurso(P2,P1,Distancia), 

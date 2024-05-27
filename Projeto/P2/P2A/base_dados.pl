@@ -159,12 +159,19 @@ medicamento(7, fisioterapia).
 medicamento(8, cine_terapia).
 medicamento(9, desporto).
 medicamento(10, cirurgia).
-medicamento(11, inalações).
+medicamento(11, inalacoes).
 medicamento(12, insulina).
 medicamento(13, antibiotico).
 medicamento(15, ginastica).
 medicamento(16, dieta).
 medicamento(17, calmante).
-medicamento(18, injeções).
+medicamento(18, injecoes).
 medicamento(20, soro).
 medicamento(0, destino).
+
+
+custoTratamento([],0).
+custoTratamento([X|R],Soma) :- custos(X,TotalTratamento), 
+custoTratamento(R,TotalMedicamento), Soma is TotalTratamento + TotalMedicamento.
+
+
