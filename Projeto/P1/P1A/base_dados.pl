@@ -104,6 +104,7 @@ tratamentos('Oximetazolina', alergias).
 tratamentos('Nintedanibe', normal).
 tratamentos('Nintedanibe', alergias).
 tratamentos('Prednisona', gravidez).
+tratamentos('Prednisona', alergias).
 tratamentos('Albuterol', alergias).
 tratamentos('Oseltamivir', normal).
 tratamentos('Zanamivir', alergias).
