@@ -132,7 +132,7 @@ findall(X,caminho(O,D,X),L), length(L,LE), random(0,LE,R), nth0(R,L,SNEW),
 change(S,SNEW):-change(S,SNEW).
 
 
-demo:- origem(O), destino(D),caminho(O,D,C), hill_climbing(C,[50,1,0,min],S),reverse(S, CaminhoInvertido),write(CaminhoInvertido).
+demo:- origem(O), destino(D),caminho(O,D,C), hill_climbing(C,[80,1,0,min],S),reverse(S, CaminhoInvertido),write(CaminhoInvertido).
 
 
 % --------------- -------------
