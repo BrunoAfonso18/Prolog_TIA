@@ -1,30 +1,81 @@
 %custos(Tratamento, Custo)
-custos(paracetamol, 5).
-custos(brufen, 4).
-custos(aspirina, 2).
-custos(anti_histaminico, 8).
-custos(descanso, 100).
-custos(fisioterapia, 150).
-custos(cine_terapia, 200).
-custos(desporto, 0).
-custos(cirurgia, 1200).
-custos(inalacoes, 50).
-custos(insulina, 34).
-custos(antibiotico, 25).
-custos(dieta, 0).
-custos(ginastica, 90).
-custos(internamento, 250).
-custos(dialise, 100).
-custos(calmante, 80).
-custos(injecoes, 75).
-custos(inalo_terapia, 90).
-custos(soro, 15).
-custos(oculos, 500).
-custos(lentes, 300).
-custos(ambulatorio, 800).
+%custos(paracetamol, 5).
+%custos(brufen, 4).
+%custos(aspirina, 2).
+%custos(anti_histaminico, 8).
+%custos(descanso, 100).
+%custos(fisioterapia, 150).
+%custos(cine_terapia, 200).
+%custos(desporto, 0).
+%custos(cirurgia, 1200).
+%custos(inalacoes, 50).
+%custos(insulina, 34).
+%custos(antibiotico, 25).
+%custos(dieta, 0).
+%custos(ginastica, 90).
+%custos(internamento, 250).
+%custos(dialise, 100).
+%custos(calmante, 80).
+%custos(injecoes, 75).
+%custos(inalo_terapia, 90).
+%custos(soro, 15).
+%custos(oculos, 500).
+%custos(lentes, 300).
+%custos(ambulatorio, 800).
+
+%custo(Origem, Destino, valor_custo)
+custo(origem, paracetamol, 5).
+custo(origem, brufen, 4).
+custo(origem, aspirina, 2).
+custo(origem, anti_histaminico, 8).
+custo(origem, descanso, 100).
+custo(paracetamol, descanso, 100).
+custo(brufen, descanso, 100).
+custo(paracetamol, fisioterapia, 150).
+custo(brufen, fisioterapia, 150).
+custo(paracetamol, cine_terapia, 200).
+custo(descanso, cine_terapia, 200).
+custo(brufen,desporto,0).
+custo(fisioterapia,cirugia,1200).
+custo(aspirina,inalacoes,50).
+custo(aspirina,insulina,34).
+custo(paracetamol,antibiotico,25).
+custo(aspirina,antibiotico,25).
+custo(anti_histaminico,antibiotico,25).
+custo(aspirina,dieta,0).
+custo(desporto,dieta,0).
+custo(brufen,ginastica,90).
+custo(fisioterapia,ginastica,90).
+custo(anti_histaminico,internamento,250).
+custo(cirurgia,internamento,250).
+custo(antibiotico,internamento,250).
+custo(insulina,dialise,100).
+custo(fisioterapia,calmante,80).
+custo(cine_terapia,calmante,80).
+custo(desporto,calmante,80).
+custo(fisioterapia,injecoes,75).
+custo(insulina,injecoes,75).
+custo(injecoes,inalo_terapia,90).
+custo(aspirina,soro,15).
+custo(cirurgia,soro,15).
+custo(inalacoes,soro,15).
+custo(paracetamol,oculos,500).
+custo(brufen,oculos,500).
+custo(aspirina,oculos,500).
+custo(descanso,oculos,500).
+custo(paracetamol,lentes,300).
+custo(brufen,lentes,300).
+custo(aspirina,lentes,300).
+custo(descanso,lentes,300).
+custo(descanso,ambulatorio,800).
+custo(ginastica,ambulatorio,800).
+custo(fisioterapia,ambulatorio,800).
+custo(calmante,ambulatorio,800).
+custo(injecoes,ambulatorio,800).
+custo(soro,ambulatorio,800).
 
 
-% tempo(Origem, Destino, Tempo)
+% tempo(Origem, Destino, valor_tempo)
 tempo(origem, paracetamol, 2).
 tempo(origem, brufen, 3).
 tempo(origem, aspirina, 4).
@@ -34,10 +85,8 @@ tempo(paracetamol, descanso, 2).
 tempo(brufen, descanso, 2).
 tempo(paracetamol, fisioterapia, 6).
 tempo(brufen, fisioterapia, 6).
-tempo(fisioterapia, destino, 0).
 tempo(paracetamol, cine_terapia, 8).
 tempo(descanso, cine_terapia, 8).
-tempo(cine_terapia, destino, 0).
 tempo(brufen,desporto,12).
 tempo(fisioterapia,cirugia,3).
 tempo(aspirina,inalacoes,10).
@@ -45,25 +94,20 @@ tempo(aspirina,insulina,30).
 tempo(paracetamol,antibiotico,8).
 tempo(aspirina,antibiotica,8).
 tempo(anti_histaminico,antibiotico,8).
-tempo(antibiotico,destino,0).
 tempo(aspirina,dieta,30).
 tempo(desporto,dieta,30).
-tempo(dieta,destino,0).
 tempo(brufen,ginastica,15).
 tempo(fisioterapia,ginastica,15).
 tempo(anti_histaminico,internamento,3).
 tempo(cirurgia,internamento,3).
 tempo(antibiotico,internamento,3).
-tempo(internamento,destino,0).
 tempo(insulina,dialise,10).
-tempo(dialise,destino,0).
 tempo(fisioterapia,calmante,90).
 tempo(cine_terapia,calmante,90).
 tempo(desporto,calmante,90).
 tempo(fisioterapia,injecoes,3).
 tempo(insulina,injecoes,3).
 tempo(injecoes,inalo_terapia,6).
-tempo(inalo_terapia,destino,0).
 tempo(aspirina,soro,8).
 tempo(cirurgia,soro,8).
 tempo(inalacoes,soro,8).
@@ -71,19 +115,17 @@ tempo(paracetamol,oculos,1000).
 tempo(brufen,oculos,1000).
 tempo(aspirina,oculos,1000).
 tempo(descanso,oculos,1000).
-tempo(oculos,destino,0).
 tempo(paracetamol,lentes,200).
 tempo(brufen,lentes,200).
 tempo(aspirina,lentes,200).
 tempo(descanso,lentes,200).
-tempo(lentes,destino,0).
 tempo(descanso,ambulatorio,20).
 tempo(ginastica,ambulatorio,20).
 tempo(fisioterapia,ambulatorio,20).
 tempo(calmante,ambulatorio,20).
 tempo(injecoes,ambulatorio,20).
 tempo(soro,ambulatorio,20).
-tempo(ambulatorio,destino,0).
+
 
 
 %Arco(origem,destino)
