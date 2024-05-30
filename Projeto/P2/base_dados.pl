@@ -173,5 +173,3 @@ medicamento(0, destino).
 custoTratamento([],0).
 custoTratamento([X|R],Soma) :- custos(X,TotalTratamento), 
 custoTratamento(R,TotalMedicamento), Soma is TotalTratamento + TotalMedicamento.
-
-
