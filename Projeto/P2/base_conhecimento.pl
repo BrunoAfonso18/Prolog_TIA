@@ -1,83 +1,50 @@
-:- dynamic comprimento/2 .
-:- dynamic custo/2 .
-:- dynamic passageiroKM/2 .
-:-[base_dados].
+:-[basedados].
 
-%Custo Tratamento
-custoTratamento([],0).
-custoTratamento([X|R],Soma) :- custos(X,TotalTratamento), 
-custoTratamento(R,TotalMedicamento), Soma is TotalTratamento + TotalMedicamento.
+%Caminhos Disponiveis dos Tratamentos
+caminho_tempo(X,Z,C):- 
+	caminho_tempo(X,Z,[X],C).
+caminho_tempo(X,X,Caminho,Caminho).
+caminho_tempo(X,Z,Visitado,Caminho):- 
+	tratamento(X,Y,_), 
+	\+ member(Y,Visitado), 
+	caminho_tempo(Y,Z,[Y | Visitado],Caminho).
 
-guardarCustoTratamento(Tratamento):- custoTratamento(Tratamento, Valor), 
-assertz(custo(Tratamento, Valor)).
+% Calcula o tempo de um dado arco: 
+tempo([],0).
+tempo([_],0).
+tempo([X,Y|R],N):- tratamento(Y,X,D), 
+    tempo([Y|R],N1), N is N1+D.
 
-gerarCustosTratamentos([]).
-gerarCustosTratamentos([C1|R1]):- guardarCustoTratamento(C1), gerarCustosTratamentos(R1).
-
-
-%DistanciaCaminho
-calcularDistancia(_,[],0).
-calcularDistancia(P1,[P2|R2], Soma):- percurso(P2,P1,Distancia), 
-calcularDistancia(P2, R2, DistanciaPercorrida), Soma is Distancia + DistanciaPercorrida.
-
-guardarDistancia([]).
-guardarDistancia([P1|R1]):- calcularDistancia(P1,R1,Valor), assertz(comprimento([P1|R1], Valor)).
-
-gerarDistanciasCaminhos([]).
-gerarDistanciasCaminhos([C1|R1]):- guardarDistancia(C1), gerarDistanciasCaminhos(R1).
-
-distanciaCaminho([P1|R1], Valor):-  calcularDistancia(P1,R1,Valor).
-
-%PassageirosKM
-calcularPassageirosKM(Caminho):- guardarDistancia(Caminho), guardarOcupacaoAutocarro(Caminho), 
-ocupacao(Caminho, OcupacaoCaminho), comprimento(Caminho, DistanciaCaminho), 
-assertz(passageiroKM(Caminho, OcupacaoCaminho / DistanciaCaminho)).
-
-gerarPassageirosKM([]).
-gerarPassageirosKM([C1|R1]):- calcularPassageirosKM(C1), gerarPassageirosKM(R1).
-
-passageiroKMCaminho(Caminho, Indice):- guardarDistancia(Caminho), guardarOcupacaoAutocarro(Caminho), 
-ocupacao(Caminho, OcupacaoCaminho), comprimento(Caminho, DistanciaCaminho), Indice is OcupacaoCaminho / DistanciaCaminho.
-
-%CaminhosDisponiveis
-caminho(X,Z,Caminho):- caminho(X,Z,[X],Caminho).
-caminho(X,X,Caminho,Caminho):- ocupacaoAutocarro(Caminho,Soma), Soma =< 45.
-caminho(X,Z,Visitado,Caminho):- percurso(X,Y,_), \+ member(Y,Visitado), 
-caminho(Y,Z,[Y | Visitado],Caminho).
-
-%GerarListaCaminhos
-listaCaminhos(X,Y,Lista):- findall(C,caminho(X,Y,C),Lista).
-
-%QuestõesDoUtilizador
-
-%CaminhoMaisCurto
-caminhoMaisCurto(X,Y,Caminho):- retractall(comprimento(_,_)), listaCaminhos(X,Y,Lista), 
-gerarDistanciasCaminhos(Lista), maisCurto(Caminho).
-
-maisCurto(Caminho):- comprimento(Caminho, V), \+ (comprimento(_, V1), V > V1).
+% Calcula e obtem-se o arco que demore menos tempo: 
+arco_curto(X,Y,C):-caminho_tempo(X,Y,C),
+mais_curto(X,Y,C).
+mais_curto(X,Y,C):- tempo(C,NC),!,
+\+ menor_tempo(X,Y,NC).
+menor_tempo(X,Y,NC):- caminho_tempo(X,Y,C1),
+tempo(C1,NC1),
+NC1<NC.
 
 
-%CaminhoMaisLongo
-caminhoMaisLongo(X,Y,Caminho):- retractall(comprimento(_,_)), listaCaminhos(X,Y,Lista), 
-gerarDistanciasCaminhos(Lista), maisLongo(Caminho).
+%Caminhos Disponiveis dos Tratamentos
+caminho_custo(X,Z,C):- 
+	caminho_custo(X,Z,[X],C).
+caminho_custo(X,X,Caminho,Caminho).
+caminho_custo(X,Z,Visitado,Caminho):- 
+	tratamento(X,Y,_), 
+	\+ member(Y,Visitado), 
+	caminho_custo(Y,Z,[Y | Visitado],Caminho).
 
-maisLongo(Caminho):- comprimento(Caminho, V), \+ (comprimento(_, V1), V1 > V).
+% Calcula o custo de um dado arco: 
+custo([],0).
+custo([_],0).
+custo([X,Y|R],N):- custos(Y,X,C),
+    custo([Y|R],N1), N is N1+C.
 
-
-%CaminhoMenosPassageiros
-caminhoMenosPassageiros(X,Y,Caminho):- retractall(ocupacao(_,_)), listaCaminhos(X,Y,Lista), 
-gerarOcupacoesCaminhos(Lista), menosPassageiros(Caminho).
-
-menosPassageiros(Caminho):- ocupacao(Caminho, V), \+ (ocupacao(_, V1), V > V1).
-
-%CaminhoMaisPassageiros
-caminhoMaisPassageiros(X,Y,Caminho):- retractall(ocupacao(_,_)), listaCaminhos(X,Y,Lista), 
-gerarOcupacoesCaminhos(Lista), maisPassageiros(Caminho).
-
-maisPassageiros(Caminho):- ocupacao(Caminho, V), \+ (ocupacao(_, V1), V1 > V).
-
-%CaminhoMaisVantajoso
-caminhoMaisVantajoso(X,Y,Caminho):- retractall(passageiroKM(_,_)), listaCaminhos(X,Y,Lista), 
-gerarPassageirosKM(Lista),!, maisVantajoso(Caminho).
-
-maisVantajoso(Caminho):- passageiroKM(Caminho, V), \+ (passageiroKM(_, V1), V1 > V).
+% Calcula e obtem-se o arco que apresenta menor custo:
+arco_barato(X,Y,C):-caminho_custo(X,Y,C),
+mais_barato(X,Y,C).
+mais_barato(X,Y,C):- custo(C,NC),!,
+\+ menor_custo(X,Y,NC).
+menor_custo(X,Y,NC):- caminho_custo(X,Y,C1),
+custo(C1,NC1),
+NC1<NC.
