@@ -38,7 +38,7 @@ custo(paracetamol, cine_terapia, 200).
 custo(descanso, cine_terapia, 200).
 custo(cine_terapia, destino, 0).
 custo(brufen,desporto,0).
-custo(fisioterapia,cirugia,1200).
+custo(fisioterapia,cirurgia,1200).
 custo(aspirina,inalacoes,50).
 custo(aspirina,insulina,34).
 custo(paracetamol,antibiotico,25).
@@ -100,11 +100,11 @@ tempo(paracetamol, cine_terapia, 8).
 tempo(descanso, cine_terapia, 8).
 tempo(cine_terapia, destino, 0).
 tempo(brufen,desporto,12).
-tempo(fisioterapia,cirugia,3).
+tempo(fisioterapia,cirurgia,3).
 tempo(aspirina,inalacoes,10).
 tempo(aspirina,insulina,30).
 tempo(paracetamol,antibiotico,8).
-tempo(aspirina,antibiotica,8).
+tempo(aspirina,antibiotico,8).
 tempo(anti_histaminico,antibiotico,8).
 tempo(antibiotico,destino,0).
 tempo(aspirina,dieta,30).
