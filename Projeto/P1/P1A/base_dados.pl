@@ -152,3 +152,19 @@ tratamentos('Pirfenidona', gravidez).
 tratamentos('Consultar medico', gravidez).
 tratamentos('Consultar medico', normal).
 tratamentos('Consultar medico', alergias).
+tratamentos('Terbutalina', normal). 
+tratamentos('Salbutamol', normal).
+tratamentos('Salbutamol', gravidez).
+tratamentos('Tobramicina', gravidez). 
+tratamentos('Ciprofloxacino', alergias). 
+tratamentos('Itraconazol', normal). 
+tratamentos('Voriconazol', gravidez). 
+tratamentos('Posaconazol', alergias). 
+tratamentos('Propranolol', normal).
+tratamentos('Atenolol', gravidez).
+tratamentos('Verapamil', alergias). 
+tratamentos('Desloratadina', normal). 
+tratamentos('Fexofenadina', gravidez). 
+tratamentos('Loratadina', alergias). 
+tratamentos('Morfina', normal). 
+tratamentos('Fentanil', alergias).
